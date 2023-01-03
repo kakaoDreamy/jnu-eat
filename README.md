@@ -41,6 +41,7 @@
   <br>
 </div>
 <br>
+노션 링크: https://uneven-green-c07.notion.site/e4e517592d6b498ebfeed6bf098fee82
 
 ## ✍️  역할 분담
 
