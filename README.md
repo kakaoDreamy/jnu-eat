@@ -7,9 +7,7 @@
 
 - 학점 계산
 - 현재 학기 시간표
-- 수강 리스트 조회
 - 수강 편람
-- 수강 대체 과목 리스트
 
 ## 💻 개발 환경
 
@@ -27,7 +25,6 @@
 **Back-end**
 <div>
   <img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=java&logoColor=white">
-
   <img src="https://img.shields.io/badge/spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white">
   <br>
 </div>
@@ -36,12 +33,11 @@
 **협업툴**
 <div>
   <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
-  <img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white">
   <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white">
   <br>
 </div>
+
 <br>
-노션 링크: https://uneven-green-c07.notion.site/e4e517592d6b498ebfeed6bf098fee82
 
 ## ✍️  역할 분담
 
@@ -49,40 +45,61 @@
 
 - Hue
     - 로그인 페이지 구현
-
+    - 졸업학점 계산 기능
 - Nov
     - 메인 페이지 구현
-    - 졸업학점 계산 기능 및 페이지 구현
-
+    - 졸업학점 페이지 구현
 - Aiden
-    - 수강 리스트 페이지 구현
-
+    - 수강 편람 페이지 구현
 - Deutan
     - 시간표 페이지 구현
-    - 수강 편람 페이지 구현
+      - 사용자 셀프 - 시간, 과목명
     
 
 ### Back-end
 
 - Eggsy
-    - 시간표 조회 기능
     - 수강 리스트 조회
-    - 졸업학점 계산 기능(sub)
+    - 테스트 데이터 테이블 생성
+    - 로그인 기능
+- Nov
+    - 5명 수강 리스트를 이용하여 데이터 정형화 - 학번, 과목 코드
+
+
+- aiden
+  - 교과목리스트 데이터 정형화 - 과목명, 과목코드, 교양/전공/일반, 과목 분류1, 과목 분류2
 
 ## 📚 자료 조사
 
 - 수강 편람 - Deutan
 - 졸업 조건 → 19학번까지의 교양을 기준으로 조사 - Nov
-- 하영드리미 api 사용 방법 - Eggsy
 
 ## 🧑‍💻 개발 기간
 
-- 로그인 페이지 → 1월 25일까지
-- 메인 페이지 → 1월 11일까지
-- 졸업 학점 계산 기능 및 페이지 → 1월 11일 ~ 25일까지
-- 수강 리스트 페이지 → 1월 25일까지
-- 수강 편람 페이지 → 1월 16일 or 17일까지
-- 시간표 페이지 → 1월 16일부터 ~ 25일까지
-- 자료조사 → 1월 9일까지
-- 수강 리스트 조회 → 1월 16일까지
-- 수강 시간표 조회 → 1월 16일 ~ 25일까지
+hue
+
+- 로그인 페이지 구현 ->17일~25일
+- 졸업학점 계산 기능 -> ~17일
+
+deutan
+
+- 시간표 페이지 구현 -> ~25일
+
+nov
+
+- 메인 페이지 구현 -> 6일~10일
+- 졸업학점 페이지 구현 -> 10일~25일
+- 5명 수강 리스트를 이용하여 데이터 정형화 -> ~6일
+
+aiden
+
+- 교과목리스트 데이터 정형화 -> ~9일
+- 수강 편람 페이지 구현 -> 9일~25일
+
+eggsy
+
+- 수강 리스트 조회 -> 10일~16일
+
+- 테스트 데이터 테이블 생성 -> ~10일
+
+- 로그인 기능 -> 17일~25일
