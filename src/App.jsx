@@ -8,6 +8,7 @@ import Contents from './components/common/Contents';
 import Footer from './components/common/Footer';
 import SelectBox from './components/Select/SelectBox';
 import ProgressBar from './components/common/ProgressBar/ProgressBar';
+import ResultPage from './components/ResultPage';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <StatusBar>
           <ProgressBar />
         </StatusBar>
+        <ResultPage />
         <Contents />
         <Footer>
           <SelectBox />
