@@ -4,6 +4,8 @@ import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+// import Roulette from '../roulette/Roulette';
+import Contents2 from '../common/Contents2';
 
 const SelectBtn = styled.select`
   padding-top: 0.25rem;
@@ -18,6 +20,16 @@ const SelectBtn = styled.select`
 `;
 
 function SelectBox() {
+  // function handleClick() {
+  //   window.location.href = '/next';
+  // }
+  // const [isOpen, setIsOpen] = useState(false);
+
+  const onClickButton = () => {
+    // setIsOpen(true);
+    <Contents2>3</Contents2>;
+  };
+
   return (
     <Container>
       <Row className="mb-2">
@@ -43,7 +55,10 @@ function SelectBox() {
         </Col>
       </Row>
       <div className="d-grid gap-1">
-        <Button variant="secondary">Show Me</Button>
+        <Button variant="secondary" onClick={onClickButton}>
+          Show Me
+        </Button>
+        {/* {isOpen && <Roulette open={isOpen} />} */}
       </div>
     </Container>
   );
