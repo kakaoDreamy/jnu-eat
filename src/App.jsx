@@ -21,9 +21,10 @@ function App() {
           <ProgressBar />
         </StatusBar>
         <Contents>
+          <Roulette />
+        </Contents>
           <KaMap />
           <ResultPage />
-        <Contents />
         <Footer>
           <SelectBox />
         </Footer>
