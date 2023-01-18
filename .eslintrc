@@ -3,10 +3,6 @@
   "rules": {
     "prettier/prettier": ["error"],
     "react/prop-types": 0,
-    "global-require": 0
-  },
-  "env": {
-    "browser": true
   },
   "globals": {
     "document": true,
