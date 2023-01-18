@@ -7,8 +7,8 @@ function KaMap() {
   useEffect(() => {
     const container = document.getElementById('map');
     const options = {
-      center: new kakao.maps.LatLng(33.459574223653, 126.56120234738),
-      level: 3,
+      center: new kakao.maps.LatLng(33.454705, 126.560767),
+      level: 4,
     };
     // eslint-disable-next-line no-unused-vars
     const map = new kakao.maps.Map(container, options);
