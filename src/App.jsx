@@ -4,11 +4,11 @@ import GlobalStyle from './components/common/GlobalStyle';
 import Layout from './components/common/Layout';
 import Header from './components/common/Header';
 import StatusBar from './components/common/StatusBar';
-// import Contents from './components/common/Contents';
-import Contents2 from './components/common/Contents2';
+import Contents from './components/common/Contents';
 import Footer from './components/common/Footer';
 import SelectBox from './components/select/SelectBox';
 import ProgressBar from './components/common/progressBar/ProgressBar';
+import Roulette from './components/roulette/Roulette';
 
 function App() {
   return (
@@ -19,8 +19,9 @@ function App() {
         <StatusBar>
           <ProgressBar />
         </StatusBar>
-        <Contents2 />
-        {/* <Contents /> */}
+        <Contents>
+          <Roulette />
+        </Contents>
         <Footer>
           <SelectBox />
         </Footer>

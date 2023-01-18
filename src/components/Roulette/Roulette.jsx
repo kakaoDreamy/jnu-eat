@@ -3,8 +3,7 @@
 import React from 'react';
 import WheelComponent from 'react-wheel-of-prizes';
 
-// import styled from 'styled-components';
-// import 'react-wheel-of-prizes/dist/index.css';
+import './Roulette.css';
 
 function Roulette() {
   const segments = [
@@ -31,20 +30,22 @@ function Roulette() {
     console.log(winner);
   };
   return (
-    <WheelComponent
-      segments={segments}
-      segColors={segColors}
-      // winningSegment="won 10" // 룰렛 결과 지정
-      onFinished={winner => onFinished(winner)}
-      primaryColor="black"
-      contrastColor="white"
-      buttonText="돌려돌려"
-      // isOnlyOnce={false} // 룰렛 동작 여러번 가능
-      size={190}
-      upDuration={100}
-      downDuration={250} // 룰렛 회전 속도 컨트롤
-      fontFamily="Arial"
-    />
+    <div className="roulettePage">
+      <WheelComponent
+        segments={segments}
+        segColors={segColors}
+        // winningSegment="won 10" // 룰렛 결과 지정
+        onFinished={winner => onFinished(winner)}
+        primaryColor="black"
+        contrastColor="white"
+        buttonText="돌려돌려"
+        isOnlyOnce={false} // 룰렛 동작 여러번 가능
+        size={290}
+        upDuration={100}
+        downDuration={250} // 룰렛 회전 속도 컨트롤
+        fontFamily="Arial"
+      />
+    </div>
   );
 }
 
