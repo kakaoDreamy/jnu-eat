@@ -8,11 +8,8 @@ import Contents from './components/common/Contents';
 import Footer from './components/common/Footer';
 import SelectBox from './components/Select/SelectBox';
 import ProgressBar from './components/common/ProgressBar/ProgressBar';
-<<<<<<< HEAD
 import ResultPage from './components/ResultPage';
-=======
 import KaMap from './components/common/KaMap/KaMap';
->>>>>>> map
 
 function App() {
   return (
@@ -23,14 +20,10 @@ function App() {
         <StatusBar>
           <ProgressBar />
         </StatusBar>
-<<<<<<< HEAD
-        <ResultPage />
-        <Contents />
-=======
         <Contents>
+          <ResultPage />
           <KaMap />
         </Contents>
->>>>>>> map
         <Footer>
           <SelectBox />
         </Footer>
