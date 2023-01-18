@@ -9,6 +9,7 @@ import Footer from './components/common/Footer';
 import SelectBox from './components/Select/SelectBox';
 import ProgressBar from './components/common/ProgressBar/ProgressBar';
 import KaMap from './components/common/KaMap/KaMap';
+import ResultPage from './components/ResultPage';
 
 function App() {
   return (
@@ -21,7 +22,8 @@ function App() {
         </StatusBar>
         <Contents>
           <KaMap />
-        </Contents>
+          <ResultPage />
+        <Contents />
         <Footer>
           <SelectBox />
         </Footer>
