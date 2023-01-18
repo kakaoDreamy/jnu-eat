@@ -6,9 +6,10 @@ import Header from './components/common/Header';
 import StatusBar from './components/common/StatusBar';
 import Contents from './components/common/Contents';
 import Footer from './components/common/Footer';
-import SelectBox from './components/select/SelectBox';
-import ProgressBar from './components/common/progressBar/ProgressBar';
-import Roulette from './components/roulette/Roulette';
+import SelectBox from './components/Select/SelectBox';
+import ProgressBar from './components/common/ProgressBar/ProgressBar';
+import KaMap from './components/common/KaMap/KaMap';
+import ResultPage from './components/ResultPage';
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
         <Contents>
           <Roulette />
         </Contents>
+          <KaMap />
+          <ResultPage />
         <Footer>
           <SelectBox />
         </Footer>
