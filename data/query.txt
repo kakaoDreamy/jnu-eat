@@ -1,9 +1,0 @@
-CREATE DATABASE JNUEAT_DB;
-
-USE JNUEAT_DB;
-
-CREATE TABLE RESTAURANT_TB;
-
-load data local infile 'csv파일 경로/jnu_restaurant.csv' into table csv_import fields terminated by ',' lines terminated by '\n';
-
-ALTER TABLE RESTAURANT_TB ADD COLUMN RES_ID INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY FIRST;
