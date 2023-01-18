@@ -34,15 +34,15 @@ function Roulette() {
     <WheelComponent
       segments={segments}
       segColors={segColors}
-      winningSegment="won 10"
+      // winningSegment="won 10" // 룰렛 결과 지정
       onFinished={winner => onFinished(winner)}
       primaryColor="black"
       contrastColor="white"
       buttonText="돌려돌려"
-      isOnlyOnce={false}
-      size={290}
+      // isOnlyOnce={false} // 룰렛 동작 여러번 가능
+      size={190}
       upDuration={100}
-      downDuration={250}
+      downDuration={250} // 룰렛 회전 속도 컨트롤
       fontFamily="Arial"
     />
   );
