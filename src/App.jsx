@@ -10,6 +10,7 @@ import SelectBox from './components/Select/SelectBox';
 import ProgressBar from './components/common/ProgressBar/ProgressBar';
 import KaMap from './components/common/KaMap/KaMap';
 import ResultPage from './components/ResultPage';
+import Roulette from './components/Roulette/Roulette';
 
 function App() {
   return (
@@ -23,8 +24,8 @@ function App() {
         <Contents>
           <Roulette />
         </Contents>
-          <KaMap />
-          <ResultPage />
+        <KaMap />
+        <ResultPage />
         <Footer>
           <SelectBox />
         </Footer>
