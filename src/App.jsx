@@ -23,8 +23,8 @@ function App() {
         </StatusBar>
         <Contents>
           <Roulette />
+          <KaMap />
         </Contents>
-        <KaMap />
         <ResultPage />
         <Footer>
           <SelectBox />
