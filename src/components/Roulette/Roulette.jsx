@@ -8,7 +8,8 @@ import React, { useState, useEffect } from 'react';
 function Roulette({ state, setState }) {
   // Called when the animation has finished.
 
-  return <div className="App"></div>;
+function Roulette() {
+  return <div>Roulette</div>;
 }
 
 export default Roulette;
