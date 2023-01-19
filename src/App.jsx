@@ -9,6 +9,7 @@ import ProgressBar from './components/common/ProgressBar/ProgressBar';
 import RouletteContents from './components/Roulette/RouletteContents';
 
 function App() {
+  const resname = '백일흑야';
   const [state, setState] = useState({
     curStage: 1,
     location: '',
@@ -21,7 +22,6 @@ function App() {
     setState({ ...state, curStage: state.curStage + 1 });
   };
   console.log(state);
-
   return (
     <div className="App">
       <GlobalStyle />
@@ -30,6 +30,8 @@ function App() {
         <StatusBar>
           <ProgressBar curStage={state.curStage} />
         </StatusBar>
+        <ResultPage resName={resname} />
+        <Contents />
         {state.curStage === 5 && (
           <div>결과 페이지 : {state.rouletteResult.text}</div>
         )}
