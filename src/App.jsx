@@ -11,6 +11,7 @@ import ProgressBar from './components/common/ProgressBar/ProgressBar';
 import ResultPage from './components/ResultPage';
 
 function App() {
+  const resname = '백일흑야';
   return (
     <div className="App">
       <GlobalStyle />
@@ -19,7 +20,7 @@ function App() {
         <StatusBar>
           <ProgressBar />
         </StatusBar>
-        <ResultPage />
+        <ResultPage resName={resname} />
         <Contents />
         <Footer>
           <SelectBox />
