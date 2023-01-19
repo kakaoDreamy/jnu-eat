@@ -1,9 +1,16 @@
 import React from 'react';
 import '../css/StartPage.css';
-import ResultPage from './ManualPopup';
+import { Link } from 'react-router-dom';
+import ManualPage from './ManualPopup';
 
-function App() {
+function StartPage() {
   const logo = require('../img/title.png');
+  // const movePage = useNavigate();
+
+  // const navTomap = () => {
+  //   movePage('./MainPage.jsx');
+  // };
+
   return (
     <div className="page">
       <div className="subtitle">
@@ -16,14 +23,16 @@ function App() {
       </div>
       <div className="reommendation">
         <button type="button" className="recommendation_btn">
-          추천받기
+          <Link to="/main" style={{ textDecoration: 'none', color: 'black' }}>
+            추천받기
+          </Link>
         </button>
       </div>
       <div className="manual">
-        <ResultPage />
+        <ManualPage />
       </div>
     </div>
   );
 }
 
-export default App;
+export default StartPage;

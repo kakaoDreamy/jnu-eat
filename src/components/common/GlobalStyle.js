@@ -22,7 +22,9 @@ body {
     box-sizing: border-box;
     letter-spacing: -0.4px;
 }
-
+.MainPage {
+    background-color: white;
+}
 
 `;
 
