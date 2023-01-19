@@ -29,16 +29,14 @@ function KaMap() {
       const markerPosition = new kakao.maps.LatLng(lat, lng);
       positions.push(markerPosition);
     }
-    const imagesrc =
-      'https://github.com/kakaoDreamy/kakaoDreamy/blob/feature/marker/src/img/marker/markers_green.png';
-
+    const imagesrc = require('../../../img/marker/markers_green.png');
     const markers = [];
     // eslint-disable-next-line no-plusplus
     for (let i = 0; i < positions.length; i++) {
-      const imageSize = new kakao.maps.Size(22, 26);
+      const imageSize = new kakao.maps.Size(20, 20);
       const imageOptions = {
-        spriteOrigin: new kakao.maps.Point(10, 0),
-        spriteSize: new kakao.maps.Size(36, 98),
+        spriteOrigin: new kakao.maps.Point(0, 0),
+        spriteSize: new kakao.maps.Size(20, 20),
       };
 
       // eslint-disable-next-line no-use-before-define
