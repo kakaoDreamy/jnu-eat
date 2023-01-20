@@ -2,6 +2,7 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-undef */
 /* eslint-disable import/no-extraneous-dependencies */
+import { element } from 'prop-types';
 import React, { useState, useEffect } from 'react';
 import Contents from '../common/Contents';
 import Footer from '../common/Footer';
@@ -108,11 +109,26 @@ function RouletteContents({ state, setState, nextStage }) {
   };
 
   const resetRoulette = () => {
-    setState({
-      ...state,
-      rouletteList: [],
-    });
-    nextStage();
+    if (state.rouletteList.length === 2) {
+      setState({
+        ...state,
+        rouletteList: [],
+        rouletteResult: state.rouletteList.map(element => {
+          if (element === state.rouletteResult) {
+          } else {
+            return element;
+          }
+        }),
+      });
+
+      nextStage();
+    } else {
+      setState({
+        ...state,
+        rouletteList: [],
+      });
+      nextStage();
+    }
   };
 
   function alertPrize(indicatedSegment) {

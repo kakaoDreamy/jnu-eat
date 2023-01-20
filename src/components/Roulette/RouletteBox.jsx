@@ -33,7 +33,11 @@ function RouletteBox({
                 variant="danger"
                 size="lg"
                 className="w-75 p-3"
-                onClick={changeHandler}
+                onClick={
+                  state.rouletteList.length === 2
+                    ? resetRoulette
+                    : changeHandler
+                }
               >
                 별로에요
               </Button>
