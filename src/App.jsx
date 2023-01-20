@@ -6,6 +6,8 @@ import Header from './components/common/Header';
 import StatusBar from './components/common/StatusBar';
 import MapContents from './components/Map/MapContents';
 import ProgressBar from './components/common/ProgressBar/ProgressBar';
+import ResultPage from './components/ResultPage';
+import KaMap from './components/common/KaMap/KaMap';
 import RouletteContents from './components/Roulette/RouletteContents';
 
 function App() {
@@ -41,7 +43,7 @@ function App() {
             state={state}
             setState={setState}
             nextStage={nextStage}
-          />
+          ><KaMap /></MapContents>
         ) : (
           <RouletteContents
             state={state}

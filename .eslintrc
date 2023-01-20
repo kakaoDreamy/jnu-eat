@@ -9,5 +9,8 @@
   "globals": {
     "document": true,
     "window": true
+  },
+  "env": {
+    "browser": true
   }
 }
