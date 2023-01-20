@@ -33,17 +33,14 @@ function App() {
           <ProgressBar curStage={state.curStage} />
         </StatusBar>
         <ResultPage resName={resname} />
-        <Contents />
         {state.curStage === 5 && (
           <div>결과 페이지 : {state.rouletteResult.text}</div>
         )}
 
         {state.curStage !== 5 && state.curStage % 2 === 1 ? (
-          <MapContents
-            state={state}
-            setState={setState}
-            nextStage={nextStage}
-          ><KaMap /></MapContents>
+          <MapContents state={state} setState={setState} nextStage={nextStage}>
+            <KaMap />
+          </MapContents>
         ) : (
           <RouletteContents
             state={state}
