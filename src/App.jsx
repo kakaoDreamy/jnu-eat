@@ -7,7 +7,6 @@ import StatusBar from './components/common/StatusBar';
 import MapContents from './components/Map/MapContents';
 import ProgressBar from './components/common/ProgressBar/ProgressBar';
 import ResultPage from './components/ResultPage';
-import KaMap from './components/common/KaMap/KaMap';
 import RouletteContents from './components/Roulette/RouletteContents';
 
 function App() {
@@ -18,6 +17,7 @@ function App() {
     time: '',
     rouletteList: '',
     rouletteResult: '',
+    map: '',
   });
 
   const nextStage = () => {
@@ -33,7 +33,7 @@ function App() {
           <ProgressBar curStage={state.curStage} />
         </StatusBar>
         <ResultPage resName={resname} />
-        <Contents />
+
         {state.curStage === 5 && (
           <div>결과 페이지 : {state.rouletteResult.text}</div>
         )}
@@ -43,7 +43,7 @@ function App() {
             state={state}
             setState={setState}
             nextStage={nextStage}
-          ><KaMap /></MapContents>
+          />
         ) : (
           <RouletteContents
             state={state}

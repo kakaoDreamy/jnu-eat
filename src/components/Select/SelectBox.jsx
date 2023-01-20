@@ -4,6 +4,7 @@ import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import building from '../../data/building.json';
 
 const SelectBtn = styled.select`
   padding-top: 0.25rem;
@@ -27,9 +28,20 @@ function SelectBox({ state, locationHandler, timeHandler, nextStage }) {
             <Col>
               <SelectBtn onChange={locationHandler} value={state.location}>
                 <option>현재 위치 선택</option>
-                <option value="공과대학 4호관">공과대학 4호관</option>
-                <option value="교양강의실">교양강의실</option>
-                <option value="도서관">도서관</option>
+
+                {building.map(element => {
+                  return (
+                    <option
+                      key={element.building_id}
+                      value={JSON.stringify({
+                        lat: element.building_lat,
+                        lng: element.building_lng,
+                      })}
+                    >
+                      {element.building_name}
+                    </option>
+                  );
+                })}
               </SelectBtn>
             </Col>
           </Row>

@@ -1,11 +1,16 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable consistent-return */
+/* eslint-disable no-unreachable-loop */
+/* eslint-disable  no-plusplus */
 // global kakao
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
+
 import building from '../../../data/building.json';
 // import greenMarker from '../../../img/marker/markers_green.png';
 
 const { kakao } = window;
 
-function KaMap() {
+function KaMap({ state, setState, listHandler }) {
   useEffect(() => {
     const container = document.getElementById('map');
     const options = {
@@ -29,8 +34,9 @@ function KaMap() {
       const markerPosition = new kakao.maps.LatLng(lat, lng);
       positions.push(markerPosition);
     }
+    const list = [];
     const imagesrc = require('../../../img/marker/markers_green.png');
-    const markers = [];
+
     // eslint-disable-next-line no-plusplus
     for (let i = 0; i < positions.length; i++) {
       const imageSize = new kakao.maps.Size(20, 20);
@@ -38,18 +44,28 @@ function KaMap() {
         spriteOrigin: new kakao.maps.Point(0, 0),
         spriteSize: new kakao.maps.Size(20, 20),
       };
-
       // eslint-disable-next-line no-use-before-define
       const markerImage = createMarkerImage(imagesrc, imageSize, imageOptions);
       // eslint-disable-next-line no-use-before-define
       const marker = craeteMarker(positions[i], markerImage);
 
-      markers.push(marker);
       // eslint-disable-next-line no-plusplus
-      for (let o = 0; o < markers.length; o++) {
-        markers[o].setMap(map);
+
+      if (!state.time) {
+        marker.setMap(map);
+        list.push(marker);
+      } else {
+        marker.setMap(map);
+
+        console.log(state.location, state.time);
       }
+
+      // setState({ ...state, map: { markers } });
     }
+
+    return () => {
+      console.log('clean');
+    };
   }, []);
 
   // 마커이미지의 주소, 크기, 옵션으로 마커 이미지 생성 리턴
