@@ -17,34 +17,44 @@ const SelectBtn = styled.select`
   width: 100%;
 `;
 
-function SelectBox() {
+function SelectBox({ state, locationHandler, timeHandler, nextStage }) {
   return (
     <Container>
-      <Row className="mb-2">
-        <Col xs="4">현재 위치</Col>
-        <Col>
-          <SelectBtn>
-            <option>Open this select menu</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </SelectBtn>
-        </Col>
-      </Row>
-      <Row className="mb-2">
-        <Col xs="4">소요 시간</Col>
-        <Col>
-          <SelectBtn>
-            <option>Open this select menu</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </SelectBtn>
-        </Col>
-      </Row>
-      <div className="d-grid gap-1">
-        <Button variant="secondary">Show Me</Button>
-      </div>
+      {state.curStage === 1 ? (
+        <>
+          <Row className="mb-2">
+            <Col xs="4">현재 위치</Col>
+            <Col>
+              <SelectBtn onChange={locationHandler} value={state.location}>
+                <option>현재 위치 선택</option>
+                <option value="공과대학 4호관">공과대학 4호관</option>
+                <option value="교양강의실">교양강의실</option>
+                <option value="도서관">도서관</option>
+              </SelectBtn>
+            </Col>
+          </Row>
+          <Row className="mb-2">
+            <Col xs="4">소요 시간</Col>
+            <Col>
+              <SelectBtn onChange={timeHandler} value={state.time}>
+                <option>소요 시간 선택</option>
+                <option value="5분 이내">5분 이내</option>
+                <option value="10분 이내">10분 이내</option>
+                <option value="15분 이내">15분 이내</option>
+              </SelectBtn>
+            </Col>
+          </Row>
+          <div className="d-grid gap-1">
+            <Button variant="secondary" onClick={nextStage}>
+              룰렛
+            </Button>
+          </div>
+        </>
+      ) : (
+        <Button variant="secondary" onClick={nextStage}>
+          식당 고르기
+        </Button>
+      )}
     </Container>
   );
 }
