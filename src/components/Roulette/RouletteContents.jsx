@@ -13,6 +13,7 @@ function RouletteContents({ state, setState, nextStage, startSpin }) {
   const [theWheel, setTheWheel] = useState('');
   const [result, setResult] = useState('');
   const [onButton, setOnButton] = useState(false);
+
   useEffect(() => {
     setTheWheel(
       new Winwheel({
@@ -133,7 +134,8 @@ function RouletteContents({ state, setState, nextStage, startSpin }) {
 
   function alertPrize(indicatedSegment) {
     // Do basic alert of the segment text.
-    alert(`You have won ${indicatedSegment.text}`);
+    // alert(`You have won ${indicatedSegment.text}`);
+    // console.log(indicatedSegment.text);
     setOnButton(true);
     setState({
       ...state,
@@ -142,11 +144,12 @@ function RouletteContents({ state, setState, nextStage, startSpin }) {
         text: indicatedSegment.text,
       },
     });
+    setResult(indicatedSegment.text);
   }
 
   return (
     <>
-      <Contents>
+      <Contents result={result}>
         <div className="turnPage">
           <div className="turn">
             <onButton className="turnButton" onClick={startSpin}>
@@ -154,14 +157,14 @@ function RouletteContents({ state, setState, nextStage, startSpin }) {
             </onButton>
           </div>
         </div>
-        <canvas id="canvas" width="400" height="500">
+        <canvas id="canvas" width="400" height="450">
           Canvas not supported, use another browser.
         </canvas>
+        <div className="resultText">"{result}" 어떠신가요?</div>
       </Contents>
       <Footer>
         <RouletteBox
           onButton={onButton}
-          startSpin={startSpin}
           state={state}
           changeHandler={changeHandler}
           resetRoulette={resetRoulette}
