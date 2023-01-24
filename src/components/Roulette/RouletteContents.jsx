@@ -9,7 +9,7 @@ import Footer from '../common/Footer';
 
 import RouletteBox from './RouletteBox';
 
-function RouletteContents({ state, setState, nextStage }) {
+function RouletteContents({ state, setState, nextStage, startSpin }) {
   const [theWheel, setTheWheel] = useState('');
   const [result, setResult] = useState('');
   const [onButton, setOnButton] = useState(false);
@@ -149,9 +149,9 @@ function RouletteContents({ state, setState, nextStage }) {
       <Contents>
         <div className="turnPage">
           <div className="turn">
-            <div className="turnButton">
+            <onButton className="turnButton" onClick={startSpin}>
               <div className="turnText">돌려돌려 돌림판</div>
-            </div>
+            </onButton>
           </div>
         </div>
         <canvas id="canvas" width="400" height="500">
