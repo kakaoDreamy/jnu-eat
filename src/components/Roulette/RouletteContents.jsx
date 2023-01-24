@@ -17,9 +17,9 @@ function RouletteContents({ state, setState, nextStage }) {
     setTheWheel(
       new Winwheel({
         numSegments: state.rouletteList.length, // Number of segments
-        outerRadius: 212, // The size of the wheel.
-        centerX: 217, // Used to position on the background correctly.
-        centerY: 219,
+        outerRadius: 180, // The size of the wheel.
+        // centerX: 217, // Used to position on the background correctly.
+        // centerY: 219,
         textFontSize: 28, // Font size.
         // Definition of all the segments.
         segments: state.rouletteList,
@@ -147,7 +147,14 @@ function RouletteContents({ state, setState, nextStage }) {
   return (
     <>
       <Contents>
-        <canvas id="canvas" width="880" height="500">
+        <div className="turnPage">
+          <div className="turn">
+            <div className="turnButton">
+              <div className="turnText">돌려돌려 돌림판</div>
+            </div>
+          </div>
+        </div>
+        <canvas id="canvas" width="400" height="500">
           Canvas not supported, use another browser.
         </canvas>
       </Contents>
