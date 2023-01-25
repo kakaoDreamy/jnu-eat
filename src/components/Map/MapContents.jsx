@@ -11,6 +11,7 @@ import palette from '../../lib/palette';
 
 import restaurantTemp from '../../data/restaurantTemp.json';
 // 식당 파일 임시로 생성해서 구현해봄
+// restaurant파일에 식당 좌표들 추가되면 나중에 restaurant로 교체함
 import { computeDistance } from '../../lib/Map/Distance';
 
 const imagesrc = require('../../img/marker/markers_green.png');
@@ -41,7 +42,7 @@ function setMarker(map, lat, lng) {
   return marker;
 }
 
-// component
+// component 시작 ( MapContents )
 function MapContents({ state, setState, nextStage }) {
   const locationHandler = e => {
     setState({ ...state, location: JSON.parse(e.target.value) });
@@ -83,7 +84,7 @@ function MapContents({ state, setState, nextStage }) {
     });
   };
 
-  // start
+  // useEffect start
   useEffect(() => {
     // 여러개 식당 마커 생성
     let positions = [];

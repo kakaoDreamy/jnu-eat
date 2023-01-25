@@ -133,7 +133,7 @@ function RouletteContents({ state, setState, nextStage }) {
         <div className="turnPage">
           <div className="turn">
             <div className="turnButton" onClick={startSpin}>
-              <div className="turnText">돌려돌려 돌림판</div>
+              <onButton className="turnText">돌려돌려 돌림판</onButton>
             </div>
           </div>
         </div>
