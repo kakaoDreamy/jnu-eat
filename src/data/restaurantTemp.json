@@ -1,0 +1,90 @@
+[
+  {
+    "RES_ID": 1,
+    "RES_NAME": "개미와배짱이",
+    "RES_ADDR": "제주특별자치도 제주시 산천단동3길 16 1층",
+    "RES_GB": "찜-탕-찌개",
+    "RES_URL": "https://place.map.kakao.com/13595973",
+    "building_lat": 33.456043,
+    "building_lng": 126.564442
+  },
+  {
+    "RES_ID": 2,
+    "RES_NAME": "거래처",
+    "RES_ADDR": "제주특별자치도 제주시 산천단동2길 13",
+    "RES_GB": "백반-죽-국수",
+    "RES_URL": "https://place.map.kakao.com/117033517",
+    "building_lat": 33.458784,
+    "building_lng": 126.562497
+  },
+  {
+    "RES_ID": 3,
+    "RES_NAME": "교수회관",
+    "RES_ADDR": "제주특별자치도 제주시 제주대학로 102 1층",
+    "RES_GB": "학식",
+    "RES_URL": "https://place.map.kakao.com/17566601"
+  },
+  {
+    "RES_ID": 4,
+    "RES_NAME": "국수집",
+    "RES_ADDR": "제주특별자치도 제주시 제주대학로 105-1 2층",
+    "RES_GB": "백반-죽-국수",
+    "RES_URL": "\r",
+    "building_lat": 33.454056,
+    "building_lng": 126.56165
+  },
+  {
+    "RES_ID": 5,
+    "RES_NAME": "김밥천국",
+    "RES_ADDR": "제주특별자치도 제주시 제주대학로 103-1 1층",
+    "RES_GB": "분식",
+    "RES_URL": "https://place.map.kakao.com/8820356",
+    "building_lat": 33.45388,
+    "building_lng": 126.562855
+  },
+  {
+    "RES_ID": 6,
+    "RES_NAME": "꽁양꽁양",
+    "RES_ADDR": "제주특별자치도 제주시 산천단동3길 16 1층",
+    "RES_GB": "돈까스-회-일식",
+    "RES_URL": "https://place.map.kakao.com/1524239383",
+    "building_lat": 33.451429,
+    "building_lng": 126.563042
+  },
+  {
+    "RES_ID": 7,
+    "RES_NAME": "다채움",
+    "RES_ADDR": "제주특별자치도 제주시 제주대학로7길 9 지하 1층",
+    "RES_GB": "백반-죽-국수",
+    "RES_URL": "https://place.map.kakao.com/2048487894",
+    "building_lat": 33.457083,
+    "building_lng": 126.565453
+  },
+  {
+    "RES_ID": 8,
+    "RES_NAME": "대구불노리왕막창",
+    "RES_ADDR": "제주특별자치도 제주시 산천단동2길 15",
+    "RES_GB": "백반-죽-국수",
+    "RES_URL": "https://place.map.kakao.com/707124913",
+    "building_lat": 33.457538,
+    "building_lng": 126.566007
+  },
+  {
+    "RES_ID": 9,
+    "RES_NAME": "돈쭐돈",
+    "RES_ADDR": "제주특별자치도 제주시 산천단동2길 15 2층",
+    "RES_GB": "돈까스-회-일식",
+    "RES_URL": "https://place.map.kakao.com/1317445359",
+    "building_lat": 33.455838,
+    "building_lng": 126.566279
+  },
+  {
+    "RES_ID": 10,
+    "RES_NAME": "맘스터치",
+    "RES_ADDR": "제주특별자치도 제주시 제주대학로 115 1층",
+    "RES_GB": "패스트푸드",
+    "RES_URL": "https://place.map.kakao.com/26096457",
+    "building_lat": 33.458137,
+    "building_lng": 126.559916
+  }
+]

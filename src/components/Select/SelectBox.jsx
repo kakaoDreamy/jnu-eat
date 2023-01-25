@@ -4,6 +4,7 @@ import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import building from '../../data/building.json';
 
 const SelectBtn = styled.select`
   padding-top: 0.25rem;
@@ -25,11 +26,23 @@ function SelectBox({ state, locationHandler, timeHandler, nextStage }) {
           <Row className="mb-2">
             <Col xs="4">현재 위치</Col>
             <Col>
-              <SelectBtn onChange={locationHandler} value={state.location}>
+              <SelectBtn onChange={locationHandler}>
                 <option>현재 위치 선택</option>
-                <option value="공과대학 4호관">공과대학 4호관</option>
-                <option value="교양강의실">교양강의실</option>
-                <option value="도서관">도서관</option>
+
+                {building.map(element => {
+                  return (
+                    <option
+                      key={element.building_id}
+                      value={JSON.stringify({
+                        lat: element.building_lat,
+                        lng: element.building_lng,
+                        name: element.building_name,
+                      })}
+                    >
+                      {element.building_name}
+                    </option>
+                  );
+                })}
               </SelectBtn>
             </Col>
           </Row>
@@ -38,14 +51,18 @@ function SelectBox({ state, locationHandler, timeHandler, nextStage }) {
             <Col>
               <SelectBtn onChange={timeHandler} value={state.time}>
                 <option>소요 시간 선택</option>
-                <option value="5분 이내">5분 이내</option>
-                <option value="10분 이내">10분 이내</option>
-                <option value="15분 이내">15분 이내</option>
+                <option value="5">5분 이내</option>
+                <option value="10">10분 이내</option>
+                <option value="15">15분 이내</option>
               </SelectBtn>
             </Col>
           </Row>
           <div className="d-grid gap-1">
-            <Button variant="secondary" onClick={nextStage}>
+            <Button
+              variant={!state.time ? 'secondary' : 'primary'}
+              onClick={nextStage}
+              disabled={!state.time}
+            >
               룰렛
             </Button>
           </div>

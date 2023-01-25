@@ -41,7 +41,7 @@
 }
 
 #root {
-    background-color: #40E0D0;
+  background-color: #40e0d0;
 }
 
 .page {
@@ -59,34 +59,33 @@ div {
 }
 
 .subtitle {
-    margin-bottom: 40px;
-    font-size: 30px;
+  margin-bottom: 40px;
+  font-size: 30px;
 }
 
 .maintitle {
-    margin-bottom: 100px;
+  margin-bottom: 100px;
 }
 
 .logo {
-    width: 300px;
+  width: 300px;
 }
 
-
 .recommendation_btn {
-    border-radius: 15px;
-    border-style: solid;
-    border-color: #282c34;
-    box-shadow: 1px 3px 3px black;
-    font-size: 30px;
-    width: 250px;
-    height: 60px;
+  border-radius: 15px;
+  border-style: solid;
+  border-color: #282c34;
+  box-shadow: 1px 3px 3px black;
+  font-size: 30px;
+  width: 250px;
+  height: 60px;
 }
 
 .manual {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .manual_btn {
-    background-color: #40E0D0;
-    border: none;
+  background-color: #40e0d0;
+  border: none;
 }

@@ -6,12 +6,32 @@ import { element } from 'prop-types';
 import React, { useState, useEffect } from 'react';
 import Contents from '../common/Contents';
 import Footer from '../common/Footer';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
 import RouletteBox from './RouletteBox';
+import styled from 'styled-components';
 
+const RouletteStyle = styled.canvas`
+  width: '880';
+  height: '500';
+  position: relative;
+  z-index: 1;
+`;
+const SpinButton = styled.button`
+  position: relative;
+  z-index: 2;
+  top: -50%;
+  border-radius: 50%;
+`;
+
+<<<<<<< HEAD
+function RouletteContents({ state, setState, nextStage }) {
+  const wheelPower = 0;
+  let wheelSpinning = false;
+=======
 function RouletteContents({ state, setState, nextStage, startSpin }) {
+>>>>>>> develop
   const [theWheel, setTheWheel] = useState('');
-  const [result, setResult] = useState('');
   const [onButton, setOnButton] = useState(false);
 
   useEffect(() => {
@@ -34,45 +54,7 @@ function RouletteContents({ state, setState, nextStage, startSpin }) {
       }),
     );
   }, [state.rouletteList]);
-  let wheelPower = 0;
-  let wheelSpinning = false;
 
-  // -------------------------------------------------------
-  // Function to handle the onClick on the power buttons.
-  // -------------------------------------------------------
-  function powerSelected(powerLevel) {
-    // Ensure that power can't be changed while wheel is spinning.
-    if (wheelSpinning == false) {
-      // Reset all to grey incase this is not the first time the user has selected the power.
-      document.getElementById('pw1').className = '';
-      document.getElementById('pw2').className = '';
-      document.getElementById('pw3').className = '';
-
-      // Now light up all cells below-and-including the one selected by changing the class.
-      if (powerLevel >= 1) {
-        document.getElementById('pw1').className = 'pw1';
-      }
-
-      if (powerLevel >= 2) {
-        document.getElementById('pw2').className = 'pw2';
-      }
-
-      if (powerLevel >= 3) {
-        document.getElementById('pw3').className = 'pw3';
-      }
-
-      // Set wheelPower var used when spin button is clicked.
-      wheelPower = powerLevel;
-
-      // Light up the spin button by changing it's source image and adding a clickable class to it.
-      document.getElementById('spin_button').src = 'spin_on.png';
-      document.getElementById('spin_button').className = 'clickable';
-    }
-  }
-
-  // -------------------------------------------------------
-  // Click handler for spin button.
-  // -------------------------------------------------------
   function startSpin() {
     // Ensure that spinning can't be clicked again while already running.
     if (wheelSpinning == false) {
@@ -110,6 +92,9 @@ function RouletteContents({ state, setState, nextStage, startSpin }) {
   };
 
   const resetRoulette = () => {
+<<<<<<< HEAD
+    nextStage();
+=======
     if (state.rouletteList.length === 2) {
       setState({
         ...state,
@@ -130,18 +115,25 @@ function RouletteContents({ state, setState, nextStage, startSpin }) {
       });
       nextStage();
     }
+>>>>>>> develop
   };
 
   function alertPrize(indicatedSegment) {
     // Do basic alert of the segment text.
+<<<<<<< HEAD
+
+    alert(`You have won ${indicatedSegment.text}`);
+=======
     // alert(`You have won ${indicatedSegment.text}`);
     // console.log(indicatedSegment.text);
+>>>>>>> develop
     setOnButton(true);
     setState({
       ...state,
       rouletteResult: {
         fillStyle: indicatedSegment.fillStyle,
         text: indicatedSegment.text,
+        url: indicatedSegment.url,
       },
     });
     setResult(indicatedSegment.text);
@@ -149,6 +141,18 @@ function RouletteContents({ state, setState, nextStage, startSpin }) {
 
   return (
     <>
+<<<<<<< HEAD
+      <Contents>
+        <FontAwesomeIcon icon={faCaretDown} size="3x" />
+        <RouletteStyle id="canvas" width="800" height="500">
+          Canvas not supported, use another browser.
+        </RouletteStyle>
+
+        <SpinButton onClick={startSpin}>
+          돌려돌려 <br />
+          돌림판
+        </SpinButton>
+=======
       <Contents result={result}>
         <div className="turnPage">
           <div className="turn">
@@ -161,6 +165,7 @@ function RouletteContents({ state, setState, nextStage, startSpin }) {
           Canvas not supported, use another browser.
         </canvas>
         <div className="resultText">"{result}" 어떠신가요?</div>
+>>>>>>> develop
       </Contents>
       <Footer>
         <RouletteBox
