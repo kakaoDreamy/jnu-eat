@@ -24,13 +24,9 @@ const SpinButton = styled.button`
   border-radius: 50%;
 `;
 
-<<<<<<< HEAD
 function RouletteContents({ state, setState, nextStage }) {
   const wheelPower = 0;
   let wheelSpinning = false;
-=======
-function RouletteContents({ state, setState, nextStage, startSpin }) {
->>>>>>> develop
   const [theWheel, setTheWheel] = useState('');
   const [onButton, setOnButton] = useState(false);
 
@@ -92,9 +88,6 @@ function RouletteContents({ state, setState, nextStage, startSpin }) {
   };
 
   const resetRoulette = () => {
-<<<<<<< HEAD
-    nextStage();
-=======
     if (state.rouletteList.length === 2) {
       setState({
         ...state,
@@ -115,18 +108,12 @@ function RouletteContents({ state, setState, nextStage, startSpin }) {
       });
       nextStage();
     }
->>>>>>> develop
   };
 
   function alertPrize(indicatedSegment) {
     // Do basic alert of the segment text.
-<<<<<<< HEAD
-
-    alert(`You have won ${indicatedSegment.text}`);
-=======
     // alert(`You have won ${indicatedSegment.text}`);
     // console.log(indicatedSegment.text);
->>>>>>> develop
     setOnButton(true);
     setState({
       ...state,
@@ -141,18 +128,6 @@ function RouletteContents({ state, setState, nextStage, startSpin }) {
 
   return (
     <>
-<<<<<<< HEAD
-      <Contents>
-        <FontAwesomeIcon icon={faCaretDown} size="3x" />
-        <RouletteStyle id="canvas" width="800" height="500">
-          Canvas not supported, use another browser.
-        </RouletteStyle>
-
-        <SpinButton onClick={startSpin}>
-          돌려돌려 <br />
-          돌림판
-        </SpinButton>
-=======
       <Contents result={result}>
         <div className="turnPage">
           <div className="turn">
@@ -165,7 +140,6 @@ function RouletteContents({ state, setState, nextStage, startSpin }) {
           Canvas not supported, use another browser.
         </canvas>
         <div className="resultText">"{result}" 어떠신가요?</div>
->>>>>>> develop
       </Contents>
       <Footer>
         <RouletteBox
