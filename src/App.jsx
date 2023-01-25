@@ -7,7 +7,7 @@ import MainPage from './page/MainPage';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route path="/" element={<StartPage />} />
           <Route path="/main" element={<MainPage />} />
