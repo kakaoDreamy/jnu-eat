@@ -1,446 +1,446 @@
 [
     {
-        "building_id":1,
-        "building_name":"간호대학",
-        "building_lat":33.456043,
-        "building_lng":126.564442
+        "id":1,
+        "name":"간호대학",
+        "lat":33.456043,
+        "lng":126.564442
     },
     {
-        "building_id":2,
-        "building_name":"감귤화훼과학기술센터",
-        "building_lat":33.458784,
-        "building_lng":126.562497
+        "id":2,
+        "name":"감귤화훼과학기술센터",
+        "lat":33.458784,
+        "lng":126.562497
     },
     {
-        "building_id":3,
-        "building_name":"경상대학1호관",
-        "building_lat":33.454056,
-        "building_lng":126.56165
+        "id":3,
+        "name":"경상대학1호관",
+        "lat":33.454056,
+        "lng":126.56165
     },
     {
-        "building_id":4,
-        "building_name":"경상대학2호관",
-        "building_lat":33.45388,
-        "building_lng":126.562855
+        "id":4,
+        "name":"경상대학2호관",
+        "lat":33.45388,
+        "lng":126.562855
     },
     {
-        "building_id": 5,
-        "building_name": "골프아카데미",
-        "building_lat": 33.451429,
-        "building_lng": 126.563042
+        "id": 5,
+        "name": "골프아카데미",
+        "lat": 33.451429,
+        "lng": 126.563042
     },
     {
-        "building_id": 6,
-        "building_name": "공과대학1호관",
-        "building_lat": 33.457083,
-        "building_lng": 126.565453
+        "id": 6,
+        "name": "공과대학1호관",
+        "lat": 33.457083,
+        "lng": 126.565453
     },
     {
-        "building_id": 7,
-        "building_name": "공과대학2호관",
-        "building_lat": 33.457538,
-        "building_lng": 126.566007
+        "id": 7,
+        "name": "공과대학2호관",
+        "lat": 33.457538,
+        "lng": 126.566007
     },
     {
-        "building_id": 8,
-        "building_name": "공과대학3호관",
-        "building_lat": 33.456438,
-        "building_lng": 126.565332
+        "id": 8,
+        "name": "공과대학3호관",
+        "lat": 33.456438,
+        "lng": 126.565332
     },
     {
-        "building_id": 9,
-        "building_name": "공과대학4호관",
-        "building_lat": 33.45472,
-        "building_lng": 126.565088
+        "id": 9,
+        "name": "공과대학4호관",
+        "lat": 33.45472,
+        "lng": 126.565088
     },
     {
-        "building_id": 10,
-        "building_name": "공과대학부설공장",
-        "building_lat": 33.455838,
-        "building_lng": 126.566279
+        "id": 10,
+        "name": "공과대학부설공장",
+        "lat": 33.455838,
+        "lng": 126.566279
     },
     {
-        "building_id": 11,
-        "building_name": "공동실험실습관",
-        "building_lat": 33.458137,
-        "building_lng": 126.559916
+        "id": 11,
+        "name": "공동실험실습관",
+        "lat": 33.458137,
+        "lng": 126.559916
     },
     {
-        "building_id": 12,
-        "building_name": "교수회관",
-        "building_lat": 33.452874,
-        "building_lng": 126.559956
+        "id": 12,
+        "name": "교수회관",
+        "lat": 33.452874,
+        "lng": 126.559956
     },
     {
-        "building_id": 13,
-        "building_name": "교양강의동",
-        "building_lat": 33.45566,
-        "building_lng": 126.564427
+        "id": 13,
+        "name": "교양강의동",
+        "lat": 33.45566,
+        "lng": 126.564427
     },
     {
-        "building_id": 14,
-        "building_name": "교직원복지관A동",
-        "building_lat": 33.45605,
-        "building_lng": 126.557453
+        "id": 14,
+        "name": "교직원복지관A동",
+        "lat": 33.45605,
+        "lng": 126.557453
     },
     {
-        "building_id": 15,
-        "building_name": "교직원복지관B동",
-        "building_lat": 33.456079,
-        "building_lng": 126.556845
+        "id": 15,
+        "name": "교직원복지관B동",
+        "lat": 33.456079,
+        "lng": 126.556845
     },
     {
-        "building_id": 16,
-        "building_name": "교직원복지관C동",
-        "building_lat": 33.455697,
-        "building_lng": 126.556511
+        "id": 16,
+        "name": "교직원복지관C동",
+        "lat": 33.455697,
+        "lng": 126.556511
     },
     {
-        "building_id": 17,
-        "building_name": "교직원복지관D동",
-        "building_lat": 33.455462,
-        "building_lng": 126.557044
+        "id": 17,
+        "name": "교직원복지관D동",
+        "lat": 33.455462,
+        "lng": 126.557044
     },
     {
-        "building_id": 18,
-        "building_name": "교직원복지관E동",
-        "building_lat": 33.455586,
-        "building_lng": 126.557452
+        "id": 18,
+        "name": "교직원복지관E동",
+        "lat": 33.455586,
+        "lng": 126.557452
     },
     {
-        "building_id": 19,
-        "building_name": "교직원복지관F동",
-        "building_lat": 33.455566,
-        "building_lng": 126.557665
+        "id": 19,
+        "name": "교직원복지관F동",
+        "lat": 33.455566,
+        "lng": 126.557665
     },
     {
-        "building_id": 20,
-        "building_name": "국제언어·문화교육센터, 아라뮤즈홀",
-        "building_lat": 33.453627,
-        "building_lng": 126.559498
+        "id": 20,
+        "name": "국제언어·문화교육센터, 아라뮤즈홀",
+        "lat": 33.453627,
+        "lng": 126.559498
     },
     {
-        "building_id": 21,
-        "building_name": "글로벌하우스",
-        "building_lat": 33.456772,
-        "building_lng": 126.559638
+        "id": 21,
+        "name": "글로벌하우스",
+        "lat": 33.456772,
+        "lng": 126.559638
     },
     {
-        "building_id": 22,
-        "building_name": "농업창업보육센터",
-        "building_lat": 33.458393,
-        "building_lng": 126.563416
+        "id": 22,
+        "name": "농업창업보육센터",
+        "lat": 33.458393,
+        "lng": 126.563416
     },
     {
-        "building_id": 23,
-        "building_name": "대학본관",
-        "building_lat": 33.455881,
-        "building_lng": 126.561928
+        "id": 23,
+        "name": "대학본관",
+        "lat": 33.455881,
+        "lng": 126.561928
     },
     {
-        "building_id": 24,
-        "building_name": "동물병원",
-        "building_lat": 33.451391,
-        "building_lng": 126.55884
+        "id": 24,
+        "name": "동물병원",
+        "lat": 33.451391,
+        "lng": 126.55884
     },
     {
-        "building_id": 25,
-        "building_name": "문화교류관(박물관)",
-        "building_lat": 33.45877,
-        "building_lng": 126.56183
+        "id": 25,
+        "name": "문화교류관(박물관)",
+        "lat": 33.45877,
+        "lng": 126.56183
     },
     {
-        "building_id": 26,
-        "building_name": "미래융합대학",
-        "building_lat": 33.456759,
-        "building_lng": 126.563615
+        "id": 26,
+        "name": "미래융합대학",
+        "lat": 33.456759,
+        "lng": 126.563615
     },
     {
-        "building_id": 27,
-        "building_name": "바이오융합센터2호관",
-        "building_lat": 33.452402,
-        "building_lng": 126.566675
+        "id": 27,
+        "name": "바이오융합센터2호관",
+        "lat": 33.452402,
+        "lng": 126.566675
     },
     {
-        "building_id": 28,
-        "building_name": "법학전문대학원",
-        "building_lat": 33.45354,
-        "building_lng": 126.560329
+        "id": 28,
+        "name": "법학전문대학원",
+        "lat": 33.45354,
+        "lng": 126.560329
     },
     {
-        "building_id": 29,
-        "building_name": "사범대학1호관",
-        "building_lat": 33.454968,
-        "building_lng": 126.563062
+        "id": 29,
+        "name": "사범대학1호관",
+        "lat": 33.454968,
+        "lng": 126.563062
     },
     {
-        "building_id": 30,
-        "building_name": "사범대학2호관",
-        "building_lat": 33.455314,
-        "building_lng": 126.563571
+        "id": 30,
+        "name": "사범대학2호관",
+        "lat": 33.455314,
+        "lng": 126.563571
     },
     {
-        "building_id": 31,
-        "building_name": "사회과학대학",
-        "building_lat": 33.454832,
-        "building_lng": 126.561689
+        "id": 31,
+        "name": "사회과학대학",
+        "lat": 33.454832,
+        "lng": 126.561689
     },
     {
-        "building_id": 32,
-        "building_name": "생명과학기술센터(증축)",
-        "building_lat": 33.458508,
-        "building_lng": 126.565381
+        "id": 32,
+        "name": "생명과학기술센터(증축)",
+        "lat": 33.458508,
+        "lng": 126.565381
     },
     {
-        "building_id": 33,
-        "building_name": "생명과학혁신기술센터",
-        "building_lat": 33.458703,
-        "building_lng": 126.565084
+        "id": 33,
+        "name": "생명과학혁신기술센터",
+        "lat": 33.458703,
+        "lng": 126.565084
     },
     {
-        "building_id": 34,
-        "building_name": "생명자원과학대학 본관동",
-        "building_lat": 33.458257,
-        "building_lng": 126.56272
+        "id": 34,
+        "name": "생명자원과학대학 본관동",
+        "lat": 33.458257,
+        "lng": 126.56272
     },
     {
-        "building_id": 35,
-        "building_name": "수의과대학",
-        "building_lat": 33.452074,
-        "building_lng": 126.558632
+        "id": 35,
+        "name": "수의과대학",
+        "lat": 33.452074,
+        "lng": 126.558632
     },
     {
-        "building_id": 36,
-        "building_name": "실험동물관리사",
-        "building_lat": 33.451486,
-        "building_lng": 126.560197
+        "id": 36,
+        "name": "실험동물관리사",
+        "lat": 33.451486,
+        "lng": 126.560197
     },
     {
-        "building_id": 37,
-        "building_name": "실험동물센터",
-        "building_lat": 33.451384,
-        "building_lng": 126.559345
+        "id": 37,
+        "name": "실험동물센터",
+        "lat": 33.451384,
+        "lng": 126.559345
     },
     {
-        "building_id": 38,
-        "building_name": "아라컨벤션홀",
-        "building_lat": 33.452289,
-        "building_lng": 126.55969
+        "id": 38,
+        "name": "아라컨벤션홀",
+        "lat": 33.452289,
+        "lng": 126.55969
     },
     {
-        "building_id": 39,
-        "building_name": "아열대원예산업연구소",
-        "building_lat": 33.458609,
-        "building_lng": 126.564679
+        "id": 39,
+        "name": "아열대원예산업연구소",
+        "lat": 33.458609,
+        "lng": 126.564679
     },
     {
-        "building_id": 40,
-        "building_name": "야외음악당",
-        "building_lat": 33.457205,
-        "building_lng": 126.562787
+        "id": 40,
+        "name": "야외음악당",
+        "lat": 33.457205,
+        "lng": 126.562787
     },
     {
-        "building_id": 41,
-        "building_name": "약학대학",
-        "building_lat": 33.457392,
-        "building_lng": 126.56014
+        "id": 41,
+        "name": "약학대학",
+        "lat": 33.457392,
+        "lng": 126.56014
     },
     {
-        "building_id": 42,
-        "building_name": "언어교육원",
-        "building_lat": 33.454085,
-        "building_lng": 126.560292
+        "id": 42,
+        "name": "언어교육원",
+        "lat": 33.454085,
+        "lng": 126.560292
     },
     {
-        "building_id": 43,
-        "building_name": "예술디자인대학 미술관",
-        "building_lat": 33.452955,
-        "building_lng": 126.561768
+        "id": 43,
+        "name": "예술디자인대학 미술관",
+        "lat": 33.452955,
+        "lng": 126.561768
     },
     {
-        "building_id": 44,
-        "building_name": "예술디자인대학 음악관",
-        "building_lat": 33.452332,
-        "building_lng": 126.56279
+        "id": 44,
+        "name": "예술디자인대학 음악관",
+        "lat": 33.452332,
+        "lng": 126.56279
     },
     {
-        "building_id": 45,
-        "building_name": "운동장본부석",
-        "building_lat": 33.455385,
-        "building_lng": 126.558768
+        "id": 45,
+        "name": "운동장본부석",
+        "lat": 33.455385,
+        "lng": 126.558768
     },
     {
-        "building_id": 46,
-        "building_name": "원자력과학기술연구소",
-        "building_lat": 33.45823,
-        "building_lng": 126.565743
+        "id": 46,
+        "name": "원자력과학기술연구소",
+        "lat": 33.45823,
+        "lng": 126.565743
     },
     {
-        "building_id": 47,
-        "building_name": "의료융합기술센터",
-        "building_lat": 33.451351,
-        "building_lng": 126.560924
+        "id": 47,
+        "name": "의료융합기술센터",
+        "lat": 33.451351,
+        "lng": 126.560924
     },
     {
-        "building_id": 48,
-        "building_name": "의학전문대학원",
-        "building_lat": 33.452856,
-        "building_lng": 126.56393
+        "id": 48,
+        "name": "의학전문대학원",
+        "lat": 33.452856,
+        "lng": 126.56393
     },
     {
-        "building_id": 49,
-        "building_name": "인문대학1호관",
-        "building_lat": 33.453439,
-        "building_lng": 126.558364
+        "id": 49,
+        "name": "인문대학1호관",
+        "lat": 33.453439,
+        "lng": 126.558364
     },
     {
-        "building_id": 50,
-        "building_name": "인문대학2호관",
-        "building_lat": 33.45277,
-        "building_lng": 126.558521
+        "id": 50,
+        "name": "인문대학2호관",
+        "lat": 33.45277,
+        "lng": 126.558521
     },
     {
-        "building_id": 51,
-        "building_name": "인재양성관",
-        "building_lat": 33.452649,
-        "building_lng": 126.556335
+        "id": 51,
+        "name": "인재양성관",
+        "lat": 33.452649,
+        "lng": 126.556335
     },
     {
-        "building_id": 52,
-        "building_name": "자연과학대학1호관",
-        "building_lat": 33.457951,
-        "building_lng": 126.564647
+        "id": 52,
+        "name": "자연과학대학1호관",
+        "lat": 33.457951,
+        "lng": 126.564647
     },
     {
-        "building_id": 53,
-        "building_name": "자연과학대학2호관",
-        "building_lat": 33.458443,
-        "building_lng": 126.560425
+        "id": 53,
+        "name": "자연과학대학2호관",
+        "lat": 33.458443,
+        "lng": 126.560425
     },
     {
-        "building_id": 54,
-        "building_name": "정문",
-        "building_lat": 33.459774,
-        "building_lng": 126.561475
+        "id": 54,
+        "name": "정문",
+        "lat": 33.459774,
+        "lng": 126.561475
     },
     {
-        "building_id": 55,
-        "building_name": "정보화본부",
-        "building_lat": 33.454509,
-        "building_lng": 126.563497
+        "id": 55,
+        "name": "정보화본부",
+        "lat": 33.454509,
+        "lng": 126.563497
     },
     {
-        "building_id": 56,
-        "building_name": "주변전실",
-        "building_lat": 33.457738,
-        "building_lng": 126.563823
+        "id": 56,
+        "name": "주변전실",
+        "lat": 33.457738,
+        "lng": 126.563823
     },
     {
-        "building_id": 57,
-        "building_name": "중소기업종합지원센터",
-        "building_lat": 33.455784,
-        "building_lng": 126.565868
+        "id": 57,
+        "name": "중소기업종합지원센터",
+        "lat": 33.455784,
+        "lng": 126.565868
     },
     {
-        "building_id": 58,
-        "building_name": "중앙도서관",
-        "building_lat": 33.452674,
-        "building_lng": 126.560823
+        "id": 58,
+        "name": "중앙도서관",
+        "lat": 33.452674,
+        "lng": 126.560823
     },
     {
-        "building_id": 59,
-        "building_name": "중앙디지털도서관",
-        "building_lat": 33.452224,
-        "building_lng": 126.560884
+        "id": 59,
+        "name": "중앙디지털도서관",
+        "lat": 33.452224,
+        "lng": 126.560884
     },
     {
-        "building_id": 60,
-        "building_name": "체육관",
-        "building_lat": 33.456031,
-        "building_lng": 126.560508
+        "id": 60,
+        "name": "체육관",
+        "lat": 33.456031,
+        "lng": 126.560508
     },
     {
-        "building_id": 61,
-        "building_name": "친환경농업연구소",
-        "building_lat": 33.457805,
-        "building_lng": 126.56294
+        "id": 61,
+        "name": "친환경농업연구소",
+        "lat": 33.457805,
+        "lng": 126.56294
     },
     {
-        "building_id": 62,
-        "building_name": "통역번역대학원",
-        "building_lat": 33.456465,
-        "building_lng": 126.563869
+        "id": 62,
+        "name": "통역번역대학원",
+        "lat": 33.456465,
+        "lng": 126.563869
     },
     {
-        "building_id": 63,
-        "building_name": "통합교양강의동/학생군사교육단",
-        "building_lat": 33.454286,
-        "building_lng": 126.566776
+        "id": 63,
+        "name": "통합교양강의동/학생군사교육단",
+        "lat": 33.454286,
+        "lng": 126.566776
     },
     {
-        "building_id": 64,
-        "building_name": "평생교육원",
-        "building_lat": 33.452408,
-        "building_lng": 126.560157
+        "id": 64,
+        "name": "평생교육원",
+        "lat": 33.452408,
+        "lng": 126.560157
     },
     {
-        "building_id": 65,
-        "building_name": "학생생활관1호관",
-        "building_lat": 33.450956,
-        "building_lng": 126.556742
+        "id": 65,
+        "name": "학생생활관1호관",
+        "lat": 33.450956,
+        "lng": 126.556742
     },
     {
-        "building_id": 66,
-        "building_name": "학생생활관2호관",
-        "building_lat": 33.450379,
-        "building_lng": 126.556928
+        "id": 66,
+        "name": "학생생활관2호관",
+        "lat": 33.450379,
+        "lng": 126.556928
     },
     {
-        "building_id": 67,
-        "building_name": "학생생활관3호관",
-        "building_lat": 33.451743,
-        "building_lng": 126.556386
+        "id": 67,
+        "name": "학생생활관3호관",
+        "lat": 33.451743,
+        "lng": 126.556386
     },
     {
-        "building_id": 68,
-        "building_name": "학생생활관4호관",
-        "building_lat": 33.450972,
-        "building_lng": 126.55807
+        "id": 68,
+        "name": "학생생활관4호관",
+        "lat": 33.450972,
+        "lng": 126.55807
     },
     {
-        "building_id": 69,
-        "building_name": "학생생활관5호관",
-        "building_lat": 33.452319,
-        "building_lng": 126.556802
+        "id": 69,
+        "name": "학생생활관5호관",
+        "lat": 33.452319,
+        "lng": 126.556802
     },
     {
-        "building_id": 70,
-        "building_name": "학생생활관6호관",
-        "building_lat": 33.453543,
-        "building_lng": 126.556621
+        "id": 70,
+        "name": "학생생활관6호관",
+        "lat": 33.453543,
+        "lng": 126.556621
     },
     {
-        "building_id": 71,
-        "building_name": "학생회관",
-        "building_lat": 33.455008,
-        "building_lng": 126.560564
+        "id": 71,
+        "name": "학생회관",
+        "lat": 33.455008,
+        "lng": 126.560564
     },
     {
-        "building_id": 72,
-        "building_name": "해양과학대학1호관",
-        "building_lat": 33.457055,
-        "building_lng": 126.563829
+        "id": 72,
+        "name": "해양과학대학1호관",
+        "lat": 33.457055,
+        "lng": 126.563829
     },
     {
-        "building_id": 73,
-        "building_name": "해양과학대학3호관",
-        "building_lat": 33.457256,
-        "building_lng": 126.564371
+        "id": 73,
+        "name": "해양과학대학3호관",
+        "lat": 33.457256,
+        "lng": 126.564371
     },
     {
-        "building_id": 74,
-        "building_name": "해양과학대학4호관",
-        "building_lat": 33.454846,
-        "building_lng": 126.566357
+        "id": 74,
+        "name": "해양과학대학4호관",
+        "lat": 33.454846,
+        "lng": 126.566357
     }
 ]

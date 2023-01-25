@@ -4,6 +4,7 @@ import Map from '../Map';
 import SelectBox from '../Select/SelectBox';
 import Footer from '../common/Footer';
 import palette from '../../lib/palette';
+import KaMap from '../common/KaMap/KaMap';
 
 function MapContents({ state, setState, nextStage }) {
   const locationHandler = e => {
@@ -30,6 +31,7 @@ function MapContents({ state, setState, nextStage }) {
   }, [state.time]);
   return (
     <>
+      <KaMap />
       <Contents>
         <Map state={state} />
       </Contents>
