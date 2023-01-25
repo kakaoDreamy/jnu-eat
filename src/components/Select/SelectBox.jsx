@@ -26,7 +26,7 @@ function SelectBox({ state, locationHandler, timeHandler, nextStage }) {
           <Row className="mb-2">
             <Col xs="4">현재 위치</Col>
             <Col>
-              <SelectBtn onChange={locationHandler} value={state.location}>
+              <SelectBtn onChange={locationHandler}>
                 <option>현재 위치 선택</option>
 
                 {building.map(element => {
@@ -36,6 +36,7 @@ function SelectBox({ state, locationHandler, timeHandler, nextStage }) {
                       value={JSON.stringify({
                         lat: element.building_lat,
                         lng: element.building_lng,
+                        name: element.building_name,
                       })}
                     >
                       {element.building_name}
@@ -50,14 +51,18 @@ function SelectBox({ state, locationHandler, timeHandler, nextStage }) {
             <Col>
               <SelectBtn onChange={timeHandler} value={state.time}>
                 <option>소요 시간 선택</option>
-                <option value="5분 이내">5분 이내</option>
-                <option value="10분 이내">10분 이내</option>
-                <option value="15분 이내">15분 이내</option>
+                <option value="5">5분 이내</option>
+                <option value="10">10분 이내</option>
+                <option value="15">15분 이내</option>
               </SelectBtn>
             </Col>
           </Row>
           <div className="d-grid gap-1">
-            <Button variant="secondary" onClick={nextStage}>
+            <Button
+              variant={!state.time ? 'secondary' : 'primary'}
+              onClick={nextStage}
+              disabled={!state.time}
+            >
               룰렛
             </Button>
           </div>

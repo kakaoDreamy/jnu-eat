@@ -1,14 +1,21 @@
+/* eslint-disable camelcase */
+/* eslint-disable no-plusplus */
+/* eslint-disable eqeqeq */
+// eslint-disable-next-line no-use-before-define
+// global kakao
 import React, { useEffect } from 'react';
 import Contents from '../common/Contents';
 import SelectBox from '../Select/SelectBox';
 import Footer from '../common/Footer';
 import palette from '../../lib/palette';
-import building from '../../data/building.json';
-// import greenMarker from '../../../img/marker/markers_green.png';
-// global kakao
+
+import restaurantTemp from '../../data/restaurantTemp.json';
+import { computeDistance } from '../../lib/Map/Distance';
+
 const imagesrc = require('../../img/marker/markers_green.png');
 
 const { kakao } = window;
+
 // 마커이미지의 주소, 크기, 옵션으로 마커 이미지 생성 리턴
 function createMarkerImage(imageSrc, size, options) {
   const markerImage = new kakao.maps.MarkerImage(imageSrc, size, options);
@@ -33,6 +40,7 @@ function setMarker(map, lat, lng) {
   return marker;
 }
 
+// component
 function MapContents({ state, setState, nextStage }) {
   const locationHandler = e => {
     setState({ ...state, location: JSON.parse(e.target.value) });
@@ -42,28 +50,50 @@ function MapContents({ state, setState, nextStage }) {
     setState({ ...state, time: e.target.value });
   };
 
-  const updateRoulette = () => {
-    setState({
-      ...state,
-      rouletteList: [
-        { fillStyle: palette[0], text: '한식' },
-        { fillStyle: palette[1], text: '중식' },
-        { fillStyle: palette[2], text: '일식' },
-        { fillStyle: palette[3], text: '양식' },
-      ],
-    });
-  };
+  const eraseDupList = list => {
+    const dupArr = list.map(element => {
+      const result =
+        state.curStage === 1
+          ? element.RES_GB
+          : { name: element.RES_NAME, url: element.RES_URL };
 
+      return result;
+    });
+    console.log(dupArr);
+
+    const set = new Set(dupArr);
+
+    const uniqueArr = [...set];
+
+    const result = uniqueArr.map((element, idx) => {
+      if (state.curStage === 1) {
+        return { fillStyle: palette[idx], text: element, url: '' };
+      }
+
+      return { fillStyle: palette[idx], text: element.name, url: element.url };
+    });
+    return result;
+  };
   const mapAndRouletteList = list => {
-    updateRoulette();
     setState({
       ...state,
       map: list,
+      rouletteList: eraseDupList(list),
     });
   };
 
   // start
   useEffect(() => {
+    // 여러개 식당 마커 생성
+    let positions = [];
+    const list = [];
+    const imageSize = new kakao.maps.Size(20, 20);
+    const imageOptions = {
+      spriteOrigin: new kakao.maps.Point(0, 0),
+      spriteSize: new kakao.maps.Size(20, 20),
+    };
+
+    const markerImage = createMarkerImage(imagesrc, imageSize, imageOptions);
     const container = document.getElementById('map');
     const options = {
       center: new kakao.maps.LatLng(33.454705, 126.560767),
@@ -78,37 +108,63 @@ function MapContents({ state, setState, nextStage }) {
       setMarker(map, state.location.lat, state.location.lng);
     }
 
-    // 여러개 마커 생성
-    const positions = [];
     // eslint-disable-next-line no-plusplus
-    for (let x = 0; x < building.length; x++) {
-      const lat = building[x].building_lat;
-      const lng = building[x].building_lng;
+
+    // 식당 건물 전체 불러와서 각각의 좌표, RES_GB값을 position 배열에다 저장
+    restaurantTemp.forEach(element => {
+      const lat = element.building_lat;
+      const lng = element.building_lng;
+      const GB = element.RES_GB;
+      const NAME = element.RES_NAME;
+      const URL = element.RES_URL;
 
       const markerPosition = new kakao.maps.LatLng(lat, lng);
+      markerPosition.RES_GB = GB;
+      markerPosition.RES_NAME = NAME;
+      markerPosition.RES_URL = URL;
       positions.push(markerPosition);
-    }
-    const list = [];
-    let end;
-    if (!state.time) {
-      end = positions.length;
+    });
+
+    // end of 식당 건물 전체 불러와서 각각의 좌표, RES_GB값을 position 배열에다 저장
+
+    if (!state.time && !state.rouletteResult) {
+      console.log('first');
+    } else if (state.time && !state.rouletteResult) {
+      // 조건에 맞는 마커들만 저장
+      positions = positions.filter(element => {
+        const dist = computeDistance(
+          state.location.lat,
+          state.location.lng,
+          element.Ma,
+          element.La,
+        );
+
+        return dist <= Number(state.time);
+        // true 인 값만 반환
+      });
+      console.log(positions);
     } else {
-      end = 10;
+      // 3단계
+      positions = positions.filter(element => {
+        const dist = computeDistance(
+          state.location.lat,
+          state.location.lng,
+          element.Ma,
+          element.La,
+        );
+
+        return (
+          dist <= Number(state.time) &&
+          element.RES_GB === state.rouletteResult.text
+        );
+        // true 인 값만 반환
+      });
+      console.log('3단계', positions);
     }
 
-    // eslint-disable-next-line no-plusplus
-    for (let i = 0; i < end; i++) {
-      const imageSize = new kakao.maps.Size(20, 20);
-      const imageOptions = {
-        spriteOrigin: new kakao.maps.Point(0, 0),
-        spriteSize: new kakao.maps.Size(20, 20),
-      };
-      // eslint-disable-next-line no-use-before-define
-      const markerImage = createMarkerImage(imagesrc, imageSize, imageOptions);
-      // eslint-disable-next-line no-use-before-define
-      const marker = craeteMarker(positions[i], markerImage);
-
-      // eslint-disable-next-line no-plusplus
+    // position 안에 있는 마커들을 화면에 띄어줌
+    positions.forEach(element => {
+      const marker = craeteMarker(element, markerImage);
 
       if (!state.time) {
         marker.setMap(map);
@@ -116,14 +172,24 @@ function MapContents({ state, setState, nextStage }) {
         list.push(marker);
       } else {
         marker.setMap(map);
-        list.push(marker.Rc);
+
+        const food = marker.Rc;
+        food.RES_GB = element.RES_GB;
+        food.RES_NAME = element.RES_NAME;
+        food.RES_URL = element.RES_URL;
+
+        list.push(food);
         console.log(state.location, state.time);
       }
-    }
+    });
+    // end of - position 안에 있는 마커들을 화면에 띄어줌
+
+    // list를 상태에다가 갱신
     mapAndRouletteList(list);
+    // end of - list를 상태에다가 갱신
 
     return () => {
-      console.log('clean');
+      console.log('unmount-MapContents.jsx');
     };
   }, [state.location, state.time]);
 

@@ -4,30 +4,38 @@ import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import styled from 'styled-components';
 
-import './RouletteBox.css';
+const Title = styled.div`
+  font-family: 'Jua', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4.5rem;
+  line-height: 69px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  -webkit-text-stroke: 1.7px black;
+`;
 
-const Title = styled.div``;
+const Result = styled.div`
+  font-weight: 400;
+  font-size: 2rem;
+`;
 
-function RouletteBox({
-  onButton,
-  startSpin,
-  state,
-  resetRoulette,
-  changeHandler,
-}) {
+function RouletteBox({ onButton, state, resetRoulette, changeHandler }) {
   console.log(state);
   return (
     <Container>
       <Row className="mt-3">
         {!onButton ? (
           <Col>
-            <Title id="spin_button" alt="Spin" onClick={startSpin}>
-              {' '}
+            <Title id="spin_button" alt="Spin">
               돌려돌려 ~ 돌림판
             </Title>
           </Col>
         ) : (
           <>
+            <Result>{state.rouletteResult.text} 어떠신가요?</Result>
             <Col>
               <Button
                 variant="danger"
