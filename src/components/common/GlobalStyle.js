@@ -24,6 +24,7 @@ body {
 }
 
 
+
 `;
 
 export default GlobalStyle;

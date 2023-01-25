@@ -1,4 +1,8 @@
 {
+<<<<<<< HEAD
+=======
+  "homepage": "https://kakaodreamy.github.io/jnu-eat/",
+>>>>>>> develop
   "name": "project",
   "version": "0.1.0",
   "private": true,
@@ -18,7 +22,10 @@
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.0",
     "react-dom": "^18.2.0",
+<<<<<<< HEAD
     "react-icon": "^1.0.0",
+=======
+>>>>>>> develop
     "react-icons": "^4.7.1",
     "react-modal": "^3.16.1",
     "react-router-dom": "^6.7.0",

@@ -2,6 +2,7 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-undef */
 /* eslint-disable import/no-extraneous-dependencies */
+import { element } from 'prop-types';
 import React, { useState, useEffect } from 'react';
 import Contents from '../common/Contents';
 import Footer from '../common/Footer';
@@ -23,18 +24,23 @@ const SpinButton = styled.button`
   border-radius: 50%;
 `;
 
+<<<<<<< HEAD
 function RouletteContents({ state, setState, nextStage }) {
   const wheelPower = 0;
   let wheelSpinning = false;
+=======
+function RouletteContents({ state, setState, nextStage, startSpin }) {
+>>>>>>> develop
   const [theWheel, setTheWheel] = useState('');
   const [onButton, setOnButton] = useState(false);
+
   useEffect(() => {
     setTheWheel(
       new Winwheel({
         numSegments: state.rouletteList.length, // Number of segments
-        outerRadius: 212, // The size of the wheel.
-        centerX: 217, // Used to position on the background correctly.
-        centerY: 219,
+        outerRadius: 180, // The size of the wheel.
+        // centerX: 217, // Used to position on the background correctly.
+        // centerY: 219,
         textFontSize: 28, // Font size.
         // Definition of all the segments.
         segments: state.rouletteList,
@@ -86,13 +92,41 @@ function RouletteContents({ state, setState, nextStage }) {
   };
 
   const resetRoulette = () => {
+<<<<<<< HEAD
     nextStage();
+=======
+    if (state.rouletteList.length === 2) {
+      setState({
+        ...state,
+        rouletteList: [],
+        rouletteResult: state.rouletteList.map(element => {
+          if (element === state.rouletteResult) {
+          } else {
+            return element;
+          }
+        }),
+      });
+
+      nextStage();
+    } else {
+      setState({
+        ...state,
+        rouletteList: [],
+      });
+      nextStage();
+    }
+>>>>>>> develop
   };
 
   function alertPrize(indicatedSegment) {
     // Do basic alert of the segment text.
+<<<<<<< HEAD
 
     alert(`You have won ${indicatedSegment.text}`);
+=======
+    // alert(`You have won ${indicatedSegment.text}`);
+    // console.log(indicatedSegment.text);
+>>>>>>> develop
     setOnButton(true);
     setState({
       ...state,
@@ -102,10 +136,12 @@ function RouletteContents({ state, setState, nextStage }) {
         url: indicatedSegment.url,
       },
     });
+    setResult(indicatedSegment.text);
   }
 
   return (
     <>
+<<<<<<< HEAD
       <Contents>
         <FontAwesomeIcon icon={faCaretDown} size="3x" />
         <RouletteStyle id="canvas" width="800" height="500">
@@ -116,11 +152,24 @@ function RouletteContents({ state, setState, nextStage }) {
           돌려돌려 <br />
           돌림판
         </SpinButton>
+=======
+      <Contents result={result}>
+        <div className="turnPage">
+          <div className="turn">
+            <onButton className="turnButton" onClick={startSpin}>
+              <div className="turnText">돌려돌려 돌림판</div>
+            </onButton>
+          </div>
+        </div>
+        <canvas id="canvas" width="400" height="450">
+          Canvas not supported, use another browser.
+        </canvas>
+        <div className="resultText">"{result}" 어떠신가요?</div>
+>>>>>>> develop
       </Contents>
       <Footer>
         <RouletteBox
           onButton={onButton}
-          startSpin={startSpin}
           state={state}
           changeHandler={changeHandler}
           resetRoulette={resetRoulette}
