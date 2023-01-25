@@ -18,7 +18,6 @@
     "react-modal": "^3.16.1",
     "react-router-dom": "^6.7.0",
     "react-scripts": "5.0.1",
-    "react-wheel-of-prizes": "^1.0.9",
     "styled-components": "^5.3.6",
     "web-vitals": "^2.1.4"
   },
