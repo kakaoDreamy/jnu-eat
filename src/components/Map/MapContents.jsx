@@ -10,6 +10,7 @@ import Footer from '../common/Footer';
 import palette from '../../lib/palette';
 
 import restaurantTemp from '../../data/restaurantTemp.json';
+// 식당 파일 임시로 생성해서 구현해봄
 import { computeDistance } from '../../lib/Map/Distance';
 
 const imagesrc = require('../../img/marker/markers_green.png');

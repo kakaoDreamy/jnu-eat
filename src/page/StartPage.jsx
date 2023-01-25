@@ -1,8 +1,9 @@
 import React from 'react';
 import '../css/StartPage.css';
+import { Link } from 'react-router-dom';
 import ResultPage from './ManualPopup';
 
-function App() {
+function StartPage() {
   const logo = require('../img/title.png');
   return (
     <div className="page">
@@ -16,7 +17,9 @@ function App() {
       </div>
       <div className="reommendation">
         <button type="button" className="recommendation_btn">
-          추천받기
+          <Link to="/main" style={{ textDecoration: 'none', color: 'black' }}>
+            추천받기
+          </Link>
         </button>
       </div>
       <div className="manual">
@@ -26,4 +29,4 @@ function App() {
   );
 }
 
-export default App;
+export default StartPage;
