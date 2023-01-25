@@ -9,17 +9,18 @@ import Footer from '../common/Footer';
 
 import RouletteBox from './RouletteBox';
 
-function RouletteContents({ state, setState, nextStage }) {
+function RouletteContents({ state, setState, nextStage, startSpin }) {
   const [theWheel, setTheWheel] = useState('');
   const [result, setResult] = useState('');
   const [onButton, setOnButton] = useState(false);
+
   useEffect(() => {
     setTheWheel(
       new Winwheel({
         numSegments: state.rouletteList.length, // Number of segments
-        outerRadius: 212, // The size of the wheel.
-        centerX: 217, // Used to position on the background correctly.
-        centerY: 219,
+        outerRadius: 180, // The size of the wheel.
+        // centerX: 217, // Used to position on the background correctly.
+        // centerY: 219,
         textFontSize: 28, // Font size.
         // Definition of all the segments.
         segments: state.rouletteList,
@@ -133,7 +134,8 @@ function RouletteContents({ state, setState, nextStage }) {
 
   function alertPrize(indicatedSegment) {
     // Do basic alert of the segment text.
-    alert(`You have won ${indicatedSegment.text}`);
+    // alert(`You have won ${indicatedSegment.text}`);
+    // console.log(indicatedSegment.text);
     setOnButton(true);
     setState({
       ...state,
@@ -142,19 +144,27 @@ function RouletteContents({ state, setState, nextStage }) {
         text: indicatedSegment.text,
       },
     });
+    setResult(indicatedSegment.text);
   }
 
   return (
     <>
-      <Contents>
-        <canvas id="canvas" width="880" height="500">
+      <Contents result={result}>
+        <div className="turnPage">
+          <div className="turn">
+            <onButton className="turnButton" onClick={startSpin}>
+              <div className="turnText">돌려돌려 돌림판</div>
+            </onButton>
+          </div>
+        </div>
+        <canvas id="canvas" width="400" height="450">
           Canvas not supported, use another browser.
         </canvas>
+        <div className="resultText">"{result}" 어떠신가요?</div>
       </Contents>
       <Footer>
         <RouletteBox
           onButton={onButton}
-          startSpin={startSpin}
           state={state}
           changeHandler={changeHandler}
           resetRoulette={resetRoulette}
