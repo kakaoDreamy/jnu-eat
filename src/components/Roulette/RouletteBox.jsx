@@ -17,11 +17,6 @@ const Title = styled.div`
   -webkit-text-stroke: 1.7px black;
 `;
 
-const Result = styled.div`
-  font-weight: 400;
-  font-size: 2rem;
-`;
-
 function RouletteBox({ onButton, state, resetRoulette, changeHandler }) {
   console.log(state);
   return (
@@ -35,7 +30,6 @@ function RouletteBox({ onButton, state, resetRoulette, changeHandler }) {
           </Col>
         ) : (
           <>
-            <Result>{state.rouletteResult.text} 어떠신가요?</Result>
             <Col>
               <Button
                 variant="danger"

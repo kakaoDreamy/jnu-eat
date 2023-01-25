@@ -27,6 +27,7 @@ const SpinButton = styled.button`
 function RouletteContents({ state, setState, nextStage }) {
   const wheelPower = 0;
   let wheelSpinning = false;
+  const [result, setResult] = useState('');
   const [theWheel, setTheWheel] = useState('');
   const [onButton, setOnButton] = useState(false);
 
@@ -131,9 +132,9 @@ function RouletteContents({ state, setState, nextStage }) {
       <Contents result={result}>
         <div className="turnPage">
           <div className="turn">
-            <onButton className="turnButton" onClick={startSpin}>
+            <div className="turnButton" onClick={startSpin}>
               <div className="turnText">돌려돌려 돌림판</div>
-            </onButton>
+            </div>
           </div>
         </div>
         <canvas id="canvas" width="400" height="450">

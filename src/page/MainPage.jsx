@@ -9,7 +9,6 @@ import ResultPage from '../components/ResultPage';
 import RouletteContents from '../components/Roulette/RouletteContents';
 
 function MainPage() {
-  const resname = '백일흑야';
   const [state, setState] = useState({
     curStage: 1,
     location: '',
@@ -31,7 +30,10 @@ function MainPage() {
         <StatusBar>
           <ProgressBar curStage={state.curStage} />
         </StatusBar>
-        <ResultPage resName={resname} />
+        <ResultPage
+          resName={state.rouletteResult.text}
+          resUrl={state.rouletteResult.url}
+        />
         {state.curStage === 5 && (
           <div>결과 페이지 : {state.rouletteResult.text}</div>
         )}
