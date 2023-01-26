@@ -39,10 +39,10 @@ function KaMap({ state, setState, listHandler }) {
 
     // eslint-disable-next-line no-plusplus
     for (let i = 0; i < positions.length; i++) {
-      const imageSize = new kakao.maps.Size(20, 20);
+      const imageSize = new kakao.maps.Size(40, 50);
       const imageOptions = {
         spriteOrigin: new kakao.maps.Point(0, 0),
-        spriteSize: new kakao.maps.Size(20, 20),
+        spriteSize: new kakao.maps.Size(40, 50),
       };
       // eslint-disable-next-line no-use-before-define
       const markerImage = createMarkerImage(imagesrc, imageSize, imageOptions);

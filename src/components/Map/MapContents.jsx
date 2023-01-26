@@ -89,10 +89,10 @@ function MapContents({ state, setState, nextStage }) {
     // 여러개 식당 마커 생성
     let positions = [];
     const list = [];
-    const imageSize = new kakao.maps.Size(20, 20);
+    const imageSize = new kakao.maps.Size(30, 40);
     const imageOptions = {
       spriteOrigin: new kakao.maps.Point(0, 0),
-      spriteSize: new kakao.maps.Size(20, 20),
+      spriteSize: new kakao.maps.Size(30, 40),
     };
 
     const markerImage = createMarkerImage(imagesrc, imageSize, imageOptions);
