@@ -40,9 +40,9 @@
   }
 }
 
-#root {
+/* #root {
   background-color: #40e0d0;
-}
+} */
 
 .page {
   width: 100vw;
@@ -51,6 +51,7 @@
   align-items: center;
   display: flex;
   flex-direction: column;
+  background-color: #40e0d0;
 }
 
 div {

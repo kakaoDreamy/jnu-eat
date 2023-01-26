@@ -7,9 +7,11 @@ element.style {
 }
 html, body {
     height: 100%;
+    
 }
 body {
     background-color: var(--gray-background);
+    
 }
 * {
     font-family: 'Jua', sans-serif;
@@ -21,6 +23,7 @@ body {
     outline: none;
     box-sizing: border-box;
     letter-spacing: -0.4px;
+    
 }
 
 
