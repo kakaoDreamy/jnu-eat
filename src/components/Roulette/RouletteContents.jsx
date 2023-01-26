@@ -133,8 +133,10 @@ function RouletteContents({ state, setState, nextStage }) {
       <Contents result={result}>
         <div className="turnPage">
           <canvas id="canvas" width="400" height="450"></canvas>
+
           <div className="resultText">"{result}" 어떠신가요?</div>
           <div className="turnButton" onClick={startSpin}>
+            <div className="arrow">▲</div>
             <div className="turnText">돌려돌려 돌림판</div>
           </div>
         </div>

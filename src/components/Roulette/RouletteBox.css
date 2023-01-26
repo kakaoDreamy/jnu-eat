@@ -11,6 +11,13 @@
   -webkit-text-stroke: 1.7px black;
 }
 
+.arrow {
+  position: absolute;
+  top: -45%;
+  font-size: 45px;
+  z-index: 3;
+}
+
 #canvas {
   /* width: 80%; */
   width: clamp(35vw, 30rem, 100vw);
