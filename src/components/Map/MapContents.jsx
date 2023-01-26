@@ -9,7 +9,7 @@ import SelectBox from '../Select/SelectBox';
 import Footer from '../common/Footer';
 import palette from '../../lib/palette';
 
-import restaurantTemp from '../../data/restaurantTemp.json';
+import restaurant from '../../data/restaurant.json';
 // 식당 파일 임시로 생성해서 구현해봄
 // restaurant파일에 식당 좌표들 추가되면 나중에 restaurant로 교체함
 import { computeDistance } from '../../lib/Map/Distance';
@@ -113,9 +113,9 @@ function MapContents({ state, setState, nextStage }) {
     // eslint-disable-next-line no-plusplus
 
     // 식당 건물 전체 불러와서 각각의 좌표, RES_GB값을 position 배열에다 저장
-    restaurantTemp.forEach(element => {
-      const lat = element.building_lat;
-      const lng = element.building_lng;
+    restaurant.forEach(element => {
+      const lat = element.RES_LAT;
+      const lng = element.RES_LNG;
       const GB = element.RES_GB;
       const NAME = element.RES_NAME;
       const URL = element.RES_URL;
