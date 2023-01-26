@@ -68,9 +68,9 @@ function SelectBox({ state, locationHandler, timeHandler, nextStage }) {
           </div>
         </>
       ) : (
-        <Button variant="secondary" onClick={nextStage}>
-          식당 고르기
-        </Button>
+        <div className="p-3 d-grid gap-1">
+          <Button onClick={nextStage}>식당 고르기</Button>
+        </div>
       )}
     </Container>
   );
