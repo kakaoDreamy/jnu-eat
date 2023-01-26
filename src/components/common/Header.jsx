@@ -18,7 +18,7 @@ const Title = styled.h3`
 function Header() {
   return (
     <HeaderBlock>
-      <Title>제목</Title>
+      <Title>제대로 먹젠</Title>
     </HeaderBlock>
   );
 }

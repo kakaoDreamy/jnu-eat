@@ -9,4 +9,4 @@ function StatusBar({ children }) {
   return <StatusBarBlock>{children}</StatusBarBlock>;
 }
 
-export default StatusBar;
+export default React.memo(StatusBar);

@@ -1,0 +1,434 @@
+[
+  {
+    "RES_ID": 1,
+    "RES_NAME": "개미와배짱이",
+    "RES_ADDR": "제주특별자치도 제주시 산천단동3길 16 1층",
+    "RES_LAT": 33.449092,
+    "RES_LNG": 126.559295,
+    "RES_GB": "찜-탕-찌개",
+    "RES_URL": "https://place.map.kakao.com/13595973"
+  },
+  {
+    "RES_ID": 2,
+    "RES_NAME": "거래처",
+    "RES_ADDR": "제주특별자치도 제주시 산천단동2길 13",
+    "RES_LAT": 33.449212,
+    "RES_LNG": 126.558224,
+    "RES_GB": "백반-죽-국수",
+    "RES_URL": "https://place.map.kakao.com/117033517"
+  },
+  {
+    "RES_ID": 3,
+    "RES_NAME": "교수회관",
+    "RES_ADDR": "제주특별자치도 제주시 제주대학로 102 1층",
+    "RES_LAT": 33.45286,
+    "RES_LNG": 126.559962,
+    "RES_GB": "학식",
+    "RES_URL": "https://place.map.kakao.com/17566601"
+  },
+  {
+    "RES_ID": 4,
+    "RES_NAME": "국수집",
+    "RES_ADDR": "제주특별자치도 제주시 제주대학로 105-1 2층",
+    "RES_LAT": 33.460332,
+    "RES_LNG": 126.561188,
+    "RES_GB": "백반-죽-국수",
+    "RES_URL": null
+  },
+  {
+    "RES_ID": 5,
+    "RES_NAME": "김밥천국",
+    "RES_ADDR": "제주특별자치도 제주시 제주대학로 103-1 1층",
+    "RES_LAT": 33.460257,
+    "RES_LNG": 126.560898,
+    "RES_GB": "분식",
+    "RES_URL": "https://place.map.kakao.com/8820356"
+  },
+  {
+    "RES_ID": 6,
+    "RES_NAME": "꽁양꽁양",
+    "RES_ADDR": "제주특별자치도 제주시 산천단동3길 16 1층",
+    "RES_LAT": 33.44917,
+    "RES_LNG": 126.559254,
+    "RES_GB": "돈까스-회-일식",
+    "RES_URL": "https://place.map.kakao.com/1524239383"
+  },
+  {
+    "RES_ID": 7,
+    "RES_NAME": "다채움",
+    "RES_ADDR": "제주특별자치도 제주시 제주대학로7길 9 지하 1층",
+    "RES_LAT": 33.460803,
+    "RES_LNG": 126.560959,
+    "RES_GB": "백반-죽-국수",
+    "RES_URL": "https://place.map.kakao.com/2048487894"
+  },
+  {
+    "RES_ID": 8,
+    "RES_NAME": "대구불노리왕막창",
+    "RES_ADDR": "제주특별자치도 제주시 산천단동2길 15",
+    "RES_LAT": 33.449311,
+    "RES_LNG": 126.5582,
+    "RES_GB": "백반-죽-국수",
+    "RES_URL": "https://place.map.kakao.com/707124913"
+  },
+  {
+    "RES_ID": 9,
+    "RES_NAME": "돈쫄돈",
+    "RES_ADDR": "제주특별자치도 제주시 산천단동2길 15 2층",
+    "RES_LAT": 33.449299,
+    "RES_LNG": 126.558162,
+    "RES_GB": "돈까스-회-일식",
+    "RES_URL": "https://place.map.kakao.com/1317445359"
+  },
+  {
+    "RES_ID": 10,
+    "RES_NAME": "맘스터치",
+    "RES_ADDR": "제주특별자치도 제주시 제주대학로 115 1층",
+    "RES_LAT": 33.460413,
+    "RES_LNG": 126.562274,
+    "RES_GB": "패스트푸드",
+    "RES_URL": "https://place.map.kakao.com/26096457"
+  },
+  {
+    "RES_ID": 11,
+    "RES_NAME": "매력식당",
+    "RES_ADDR": "제주특별자치도 제주시 산천단동 1길 20-9 1층",
+    "RES_LAT": 33.449915,
+    "RES_LNG": 126.557661,
+    "RES_GB": "돈까스-회-일식",
+    "RES_URL": "https://place.map.kakao.com/1639868766"
+  },
+  {
+    "RES_ID": 12,
+    "RES_NAME": "매콩스카이",
+    "RES_ADDR": "제주 제주시 제주대학로 77",
+    "RES_LAT": 33.459358,
+    "RES_LNG": 126.558509,
+    "RES_GB": "아시안",
+    "RES_URL": "https://place.map.kakao.com/208073766"
+  },
+  {
+    "RES_ID": 13,
+    "RES_NAME": "맵수다",
+    "RES_ADDR": "제주특별자치도 제주시 제주대학로7길 5-2 지하 1층",
+    "RES_LAT": 33.460634,
+    "RES_LNG": 126.561009,
+    "RES_GB": "분식",
+    "RES_URL": "https://place.map.kakao.com/1559908402"
+  },
+  {
+    "RES_ID": 14,
+    "RES_NAME": "명품치킨",
+    "RES_ADDR": "제주특별자치도 제주시 산천단동3길 31",
+    "RES_LAT": 33.450549,
+    "RES_LNG": 126.558333,
+    "RES_GB": "치킨",
+    "RES_URL": "https://place.map.kakao.com/26432601"
+  },
+  {
+    "RES_ID": 15,
+    "RES_NAME": "백일흑야",
+    "RES_ADDR": "제주특별자치도 제주시 산천단동3길 26 1층 106호",
+    "RES_LAT": 33.450244,
+    "RES_LNG": 126.558905,
+    "RES_GB": "아시안",
+    "RES_URL": "https://place.map.kakao.com/330254277"
+  },
+  {
+    "RES_ID": 16,
+    "RES_NAME": "봉구스밥버거",
+    "RES_ADDR": "제주특별자치도 제주시 제주대학로7길 6 1층",
+    "RES_LAT": 33.460658,
+    "RES_LNG": 126.56149,
+    "RES_GB": "도시락",
+    "RES_URL": "https://place.map.kakao.com/21688769"
+  },
+  {
+    "RES_ID": 17,
+    "RES_NAME": "봉수아 피자",
+    "RES_ADDR": "제주특별자치도 제주시 산천단동길 31 1층",
+    "RES_LAT": 33.44819,
+    "RES_LNG": 126.559372,
+    "RES_GB": "피자",
+    "RES_URL": "https://place.map.kakao.com/525832872"
+  },
+  {
+    "RES_ID": 18,
+    "RES_NAME": "산들애국수",
+    "RES_ADDR": "제주특별자치도 제주시 제주대학로7길 6 1층",
+    "RES_LAT": 33.460651,
+    "RES_LNG": 126.561557,
+    "RES_GB": "백반-죽-국수",
+    "RES_URL": "https://place.map.kakao.com/20492370"
+  },
+  {
+    "RES_ID": 19,
+    "RES_NAME": "산아름국수",
+    "RES_ADDR": "제주특별자치도 제주시 산천단동3길 25 1층",
+    "RES_LAT": 33.450022,
+    "RES_LNG": 126.558511,
+    "RES_GB": "백반-죽-국수",
+    "RES_URL": "https://place.map.kakao.com/21357190"
+  },
+  {
+    "RES_ID": 20,
+    "RES_NAME": "상아탑식당",
+    "RES_ADDR": "제주특별자치도 제주시 제주대학로7길 6-1 1층",
+    "RES_LAT": 33.460684,
+    "RES_LNG": 126.561815,
+    "RES_GB": "찜-탕-찌개",
+    "RES_URL": "https://place.map.kakao.com/21488539"
+  },
+  {
+    "RES_ID": 21,
+    "RES_NAME": "서브웨이",
+    "RES_ADDR": "제주특별자치도 제주시 제주대학로 113 1층",
+    "RES_LAT": 33.460351,
+    "RES_LNG": 126.562097,
+    "RES_GB": "패스트푸드",
+    "RES_URL": "https://place.map.kakao.com/1512304373"
+  },
+  {
+    "RES_ID": 22,
+    "RES_NAME": "서유기",
+    "RES_ADDR": "제주특별자치도 제주시 제주대학로 115 2층",
+    "RES_LAT": 33.46039,
+    "RES_LNG": 126.562268,
+    "RES_GB": "마라요리",
+    "RES_URL": "https://place.map.kakao.com/356711184"
+  },
+  {
+    "RES_ID": 23,
+    "RES_NAME": "신관 백두관 식당",
+    "RES_ADDR": "제주특별자치도 제주시 제주대학로 102 1층",
+    "RES_LAT": 33.455008,
+    "RES_LNG": 126.560569,
+    "RES_GB": "학식",
+    "RES_URL": "https://place.map.kakao.com/13499343"
+  },
+  {
+    "RES_ID": 24,
+    "RES_NAME": "신룽푸",
+    "RES_ADDR": "제주특별자치도 제주시 산천단공2길 24 1층",
+    "RES_LAT": 33.450163,
+    "RES_LNG": 126.558346,
+    "RES_GB": "마라요리",
+    "RES_URL": "https://place.map.kakao.com/919828959"
+  },
+  {
+    "RES_ID": 25,
+    "RES_NAME": "신전떡볶이",
+    "RES_ADDR": "제주특별자치도 제주시 제주대학로7길 6-1 2층",
+    "RES_LAT": 33.460693,
+    "RES_LNG": 126.561788,
+    "RES_GB": "분식",
+    "RES_URL": "https://place.map.kakao.com/603632383"
+  },
+  {
+    "RES_ID": 26,
+    "RES_NAME": "쏭스핫도그",
+    "RES_ADDR": "제주특별자치도 제주시 제주대학로 103-1 1층",
+    "RES_LAT": 33.460275,
+    "RES_LNG": 126.560986,
+    "RES_GB": "분식",
+    "RES_URL": "https://place.map.kakao.com/1356360853"
+  },
+  {
+    "RES_ID": 27,
+    "RES_NAME": "아라주는엄마치킨",
+    "RES_ADDR": "제주특별자치도 제주시 산천단동3길 13-2",
+    "RES_LAT": 33.449049,
+    "RES_LNG": 126.558714,
+    "RES_GB": "치킨",
+    "RES_URL": "https://place.map.kakao.com/20171821"
+  },
+  {
+    "RES_ID": 28,
+    "RES_NAME": "여운",
+    "RES_ADDR": "제주특별자치도 제주시 산천단동1길 7 1층",
+    "RES_LAT": 33.448678,
+    "RES_LNG": 126.557617,
+    "RES_GB": "백반-죽-국수",
+    "RES_URL": "https://place.map.kakao.com/1612497480"
+  },
+  {
+    "RES_ID": 29,
+    "RES_NAME": "옛날아우네순대 제대점",
+    "RES_ADDR": "제주특별자치도 제주시 산천단동2길 15 1층",
+    "RES_LAT": 33.449297,
+    "RES_LNG": 126.558205,
+    "RES_GB": "백반-죽-국수",
+    "RES_URL": "https://place.map.kakao.com/334779301"
+  },
+  {
+    "RES_ID": 30,
+    "RES_NAME": "오니기리와이규동",
+    "RES_ADDR": "제주특별자치도 제주시 제주대학로 109 1층",
+    "RES_LAT": 33.460339,
+    "RES_LNG": 126.561685,
+    "RES_GB": "돈까스-회-일식",
+    "RES_URL": "https://place.map.kakao.com/12969249"
+  },
+  {
+    "RES_ID": 31,
+    "RES_NAME": "오소니황칠해장국",
+    "RES_ADDR": "제주특별자치도 제주시 제주대학로 115 1층",
+    "RES_LAT": 33.46039,
+    "RES_LNG": 126.562244,
+    "RES_GB": "백반-죽-국수",
+    "RES_URL": "https://place.map.kakao.com/117266997"
+  },
+  {
+    "RES_ID": 32,
+    "RES_NAME": "와랑와랑",
+    "RES_ADDR": "제주특별자치도 제주시 산천단동1길 9 1층",
+    "RES_LAT": 33.44889,
+    "RES_LNG": 126.557685,
+    "RES_GB": "백반-죽-국수",
+    "RES_URL": "https://place.map.kakao.com/26460917"
+  },
+  {
+    "RES_ID": 33,
+    "RES_NAME": "우향",
+    "RES_ADDR": "제주특별자치도 제주시 산천단동2길 13 1층",
+    "RES_LAT": 33.449184,
+    "RES_LNG": 126.558157,
+    "RES_GB": "돈까스-회-일식",
+    "RES_URL": "https://place.map.kakao.com/917821836"
+  },
+  {
+    "RES_ID": 34,
+    "RES_NAME": "월궁",
+    "RES_ADDR": "제주특별자치도 제주시 산천단동2길 20 1층",
+    "RES_LAT": 33.449797,
+    "RES_LNG": 126.55863,
+    "RES_GB": "중식",
+    "RES_URL": "https://place.map.kakao.com/9322069"
+  },
+  {
+    "RES_ID": 35,
+    "RES_NAME": "위드미트",
+    "RES_ADDR": "제주특별자치도 제주시 제주대학로 111 2층",
+    "RES_LAT": 33.460337,
+    "RES_LNG": 126.561809,
+    "RES_GB": "고기-구이",
+    "RES_URL": "https://place.map.kakao.com/117173230"
+  },
+  {
+    "RES_ID": 36,
+    "RES_NAME": "이삭토스트",
+    "RES_ADDR": "제주특별자치도 제주시 제주대학로 73 1층",
+    "RES_LAT": 33.459167,
+    "RES_LNG": 126.557975,
+    "RES_GB": "패스트푸드",
+    "RES_URL": "https://place.map.kakao.com/11179297"
+  },
+  {
+    "RES_ID": 37,
+    "RES_NAME": "이왕돈가스",
+    "RES_ADDR": "제주특별자치도 제주시 제주대학로 107 2층",
+    "RES_LAT": 33.460349,
+    "RES_LNG": 126.561459,
+    "RES_GB": "돈까스-회-일식",
+    "RES_URL": "https://place.map.kakao.com/2127888633"
+  },
+  {
+    "RES_ID": 38,
+    "RES_NAME": "잇마이피자",
+    "RES_ADDR": "제주특별자치도 제주시 산천단동 3길 31 1층",
+    "RES_LAT": 33.450594,
+    "RES_LNG": 126.558338,
+    "RES_GB": "피자",
+    "RES_URL": "https://place.map.kakao.com/1777197845"
+  },
+  {
+    "RES_ID": 39,
+    "RES_NAME": "제대김밥",
+    "RES_ADDR": "제주특별자치도 제주시 산천단동3길 26 1층",
+    "RES_LAT": 33.45003,
+    "RES_LNG": 126.558812,
+    "RES_GB": "분식",
+    "RES_URL": "https://place.map.kakao.com/1345909823"
+  },
+  {
+    "RES_ID": 40,
+    "RES_NAME": "종합강의실",
+    "RES_ADDR": "제주특별자치도 제주시 산천단동3길 26 1층",
+    "RES_LAT": 33.45031,
+    "RES_LNG": 126.558907,
+    "RES_GB": "고기-구이",
+    "RES_URL": null
+  },
+  {
+    "RES_ID": 41,
+    "RES_NAME": "진성반점",
+    "RES_ADDR": "제주특별자치도 제주시 제주대학로 109 2층",
+    "RES_LAT": 33.460338,
+    "RES_LNG": 126.561645,
+    "RES_GB": "중식",
+    "RES_URL": "https://place.map.kakao.com/12606690"
+  },
+  {
+    "RES_ID": 42,
+    "RES_NAME": "챨리스 스테이크",
+    "RES_ADDR": "제주특별자치도 제주시 산천단동2길 14 1층",
+    "RES_LAT": 33.449148,
+    "RES_LNG": 126.558566,
+    "RES_GB": "양식",
+    "RES_URL": "https://place.map.kakao.com/1448133411"
+  },
+  {
+    "RES_ID": 43,
+    "RES_NAME": "콘킹부대찌개",
+    "RES_ADDR": "제주특별자치도 제주시 제주대학로7길 5-2 1층",
+    "RES_LAT": 33.460638,
+    "RES_LNG": 126.561009,
+    "RES_GB": "찜-탕-찌개",
+    "RES_URL": "https://place.map.kakao.com/21525668"
+  },
+  {
+    "RES_ID": 44,
+    "RES_NAME": "텐동아우라",
+    "RES_ADDR": "제주특별자치도 제주시 제주대학로7길 9 1층",
+    "RES_LAT": 33.460769,
+    "RES_LNG": 126.560976,
+    "RES_GB": "돈까스-회-일식",
+    "RES_URL": "https://place.map.kakao.com/253333044"
+  },
+  {
+    "RES_ID": 45,
+    "RES_NAME": "푸라닭치킨 제주대점",
+    "RES_ADDR": "제주특별자치도 제주시 산천단동3길 13-1 1층",
+    "RES_LAT": 33.448926,
+    "RES_LNG": 126.559097,
+    "RES_GB": "치킨",
+    "RES_URL": "https://place.map.kakao.com/1502959810"
+  },
+  {
+    "RES_ID": 46,
+    "RES_NAME": "학교종이 땡땡땡",
+    "RES_ADDR": "제주특별자치도 제주시 제주대학로 113 지하1층",
+    "RES_LAT": 33.460367,
+    "RES_LNG": 126.562064,
+    "RES_GB": "고기-구이",
+    "RES_URL": "https://place.map.kakao.com/758756399"
+  },
+  {
+    "RES_ID": 47,
+    "RES_NAME": "한솥도시락",
+    "RES_ADDR": "제주특별자치도 제주시 제주대학로 107 2층",
+    "RES_LAT": 33.46034,
+    "RES_LNG": 126.561513,
+    "RES_GB": "도시락",
+    "RES_URL": "https://place.map.kakao.com/1608196405"
+  },
+  {
+    "RES_ID": 48,
+    "RES_NAME": "흥부",
+    "RES_ADDR": "제주특별자치도 제주시 산천단동3길 12",
+    "RES_LAT": 33.448977,
+    "RES_LNG": 126.559481,
+    "RES_GB": "백반-죽-국수",
+    "RES_URL": "https://place.map.kakao.com/25402919"
+  }
+]
