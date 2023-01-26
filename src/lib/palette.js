@@ -14,5 +14,6 @@ const palette = [
   '	#B8860B',
   '#F5F5DC',
   '#5F9EA0',
+  '	#B8860B',
 ];
 export default palette;
