@@ -32,3 +32,10 @@ jobs:
       run: npm ci
     - name: Build project
       run: npm run build
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v2.5.0
+      env:
+        PERSONAL_TOKEN: ${{secrets.GH_PAT}}
+        PUBLISH_BRANCH: main
+        PUBLISH_DIR: ./public
+        SCRIPT_MODE: true
