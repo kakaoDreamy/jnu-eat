@@ -37,6 +37,7 @@ function setMarker(map, lat, lng) {
   const markerPosition = new kakao.maps.LatLng(lat, lng);
   const marker = new kakao.maps.Marker({
     position: markerPosition,
+    clickable: true,
   });
   marker.setMap(map);
   return marker;
@@ -111,7 +112,6 @@ function MapContents({ state, setState, nextStage }) {
     }
 
     // eslint-disable-next-line no-plusplus
-
     // 식당 건물 전체 불러와서 각각의 좌표, RES_GB값을 position 배열에다 저장
     restaurant.forEach(element => {
       const lat = element.RES_LAT;
@@ -126,6 +126,23 @@ function MapContents({ state, setState, nextStage }) {
       markerPosition.RES_URL = URL;
       positions.push(markerPosition);
     });
+
+    // /// /////////////////////////////////////////////////////////////////////
+    // // 마커 인포윈도우 생성하기
+    // const iwContent = '<div style="padding:5px;">Hello World!</div>'; // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+    // const iwRemoveable = true; // removeable 속성을 ture 로 설정하면 인포윈도우를 닫을 수 있는 x버튼이 표시됩니다
+
+    // // 인포윈도우를 생성합니다
+    // const infowindow = new kakao.maps.InfoWindow({
+    //   content: iwContent,
+    //   removable: iwRemoveable,
+    // });
+
+    // // 마커에 클릭이벤트를 등록합니다
+    // kakao.maps.event.addListener(marker, 'click', function () {
+    //   // 마커 위에 인포윈도우를 표시합니다
+    //   infowindow.open(map, marker);
+    // });
 
     // end of 식당 건물 전체 불러와서 각각의 좌표, RES_GB값을 position 배열에다 저장
 
