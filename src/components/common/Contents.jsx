@@ -6,7 +6,7 @@ const ContentsBlock = styled.div`
 
   margin: 0px auto;
 
-  background-color: silver;
+  background-color: rgba(97, 218, 255, 0.5);
 
   height: 71vh;
 `;
