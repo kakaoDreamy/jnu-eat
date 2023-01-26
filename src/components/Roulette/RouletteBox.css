@@ -1,6 +1,5 @@
 #spin_button {
   font-family: 'Jua', sans-serif;
-
   font-style: normal;
   font-weight: 400;
   font-size: 4rem;
@@ -8,42 +7,52 @@
   display: flex;
   align-items: center;
   text-align: center;
-
   color: #ffffff;
   -webkit-text-stroke: 1.7px black;
 }
 
+.arrow {
+  position: absolute;
+  top: -45%;
+  font-size: 45px;
+  z-index: 3;
+}
+
 #canvas {
-  /* position: relative; */
-  margin-top: 20%;
-  /* width: 100%;
-  height: 100%; */
+  /* width: 80%; */
+  width: clamp(35vw, 30rem, 100vw);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
 }
 
 .turnPage {
-  position: absolute;
-  width: 100%;
-  height: 70%;
-}
-
-.turn {
+  height: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 400px;
-  height: 450px;
-  margin: 20% auto 20% auto;
+  flex-direction: column;
+  justify-content: end;
 }
 
 .turnButton {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 130px;
-  height: 130px;
-  margin: 68% auto;
+  width: 105px;
+  height: 105px;
   border-radius: 50%;
+  margin: auto;
   background-color: white;
   border-color: black;
   border-style: solid;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.resultText {
+  --font-size-lg: clamp(1.8rem, 4vw, 6rem);
+  font-size: var(--font-size-lg);
+  height: 100px;
 }

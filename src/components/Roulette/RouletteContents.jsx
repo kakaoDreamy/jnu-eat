@@ -10,6 +10,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
 import RouletteBox from './RouletteBox';
 import styled from 'styled-components';
+import '../Roulette/RouletteBox.css';
 
 const RouletteStyle = styled.canvas`
   width: '880';
@@ -38,7 +39,7 @@ function RouletteContents({ state, setState, nextStage }) {
         outerRadius: 180, // The size of the wheel.
         // centerX: 217, // Used to position on the background correctly.
         // centerY: 219,
-        textFontSize: 28, // Font size.
+        textFontSize: 16, // Font size.
         // Definition of all the segments.
         segments: state.rouletteList,
         // Definition of the animation
@@ -131,16 +132,14 @@ function RouletteContents({ state, setState, nextStage }) {
     <>
       <Contents result={result}>
         <div className="turnPage">
-          <div className="turn">
-            <div className="turnButton" onClick={startSpin}>
-              <onButton className="turnText">돌려돌려 돌림판</onButton>
-            </div>
+          <canvas id="canvas" width="400" height="450"></canvas>
+
+          <div className="resultText">"{result}" 어떠신가요?</div>
+          <div className="turnButton" onClick={startSpin}>
+            <div className="arrow">▲</div>
+            <div className="turnText">돌려돌려 돌림판</div>
           </div>
         </div>
-        <canvas id="canvas" width="400" height="450">
-          Canvas not supported, use another browser.
-        </canvas>
-        <div className="resultText">"{result}" 어떠신가요?</div>
       </Contents>
       <Footer>
         <RouletteBox
