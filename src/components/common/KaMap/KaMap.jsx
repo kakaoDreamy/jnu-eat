@@ -1,16 +1,12 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable consistent-return */
-/* eslint-disable no-unreachable-loop */
-/* eslint-disable  no-plusplus */
 // global kakao
-import React, { useEffect, useState } from 'react';
-
-import building from '../../../data/building.json';
-// import greenMarker from '../../../img/marker/markers_green.png';
+import React, { useEffect } from 'react';
+import restaurant from '../../../data/restaurant.json';
+// import Kakaomap from '../../KakaoMap';
+import '../../../css/InfoWindow.css';
 
 const { kakao } = window;
 
-function KaMap({ state, setState, listHandler }) {
+function KaMap() {
   useEffect(() => {
     const container = document.getElementById('map');
     const options = {
@@ -26,46 +22,63 @@ function KaMap({ state, setState, listHandler }) {
 
     // 여러개 마커 생성
     const positions = [];
+    const infoContent = [];
+
+    const imagesrc = require('../../../img/marker/markers_blue.png');
+    const markers = [];
+
     // eslint-disable-next-line no-plusplus
-    for (let x = 0; x < building.length; x++) {
-      const lat = building[x].building_lat;
-      const lng = building[x].building_lng;
+    for (let x = 0; x < restaurant.length; x++) {
+      const lat = restaurant[x].RES_LAT;
+      const lng = restaurant[x].RES_LNG;
+      const name = restaurant[x].RES_NAME;
+      const address = restaurant[x].RES_ADDR;
+      const url = restaurant[x].RES_URL;
+
+      infoContent[x] = `<div class="customoverlay">
+        <button class="close" onclick="" title="닫기"></button>
+        <div class="customoverlayContent">
+          <p>이름  :  ${name}</p>
+          <p>주소  :  ${address}</p>
+          <p>카카오맵  :  <a href="${url}">더보기</a></p>
+        </div>
+        <div class="customoverlayShare">
+        
+      </div>`;
 
       const markerPosition = new kakao.maps.LatLng(lat, lng);
       positions.push(markerPosition);
-    }
-    const list = [];
-    const imagesrc = require('../../../img/marker/markers_green.png');
 
-    // eslint-disable-next-line no-plusplus
-    for (let i = 0; i < positions.length; i++) {
       const imageSize = new kakao.maps.Size(20, 20);
       const imageOptions = {
         spriteOrigin: new kakao.maps.Point(0, 0),
         spriteSize: new kakao.maps.Size(20, 20),
       };
+
       // eslint-disable-next-line no-use-before-define
       const markerImage = createMarkerImage(imagesrc, imageSize, imageOptions);
       // eslint-disable-next-line no-use-before-define
-      const marker = craeteMarker(positions[i], markerImage);
+      const marker = craeteMarker(positions[x], markerImage);
 
+      const iwContent = infoContent[x];
+      const iwRemoveable = true;
+      const customoverlay = new kakao.maps.CustomOverlay({
+        position: marker.getPosition(),
+        content: iwContent,
+        removable: iwRemoveable,
+      });
+
+      markers.push(marker);
       // eslint-disable-next-line no-plusplus
 
-      if (!state.time) {
-        marker.setMap(map);
-        list.push(marker);
-      } else {
-        marker.setMap(map);
+      markers[x].setMap(map);
 
-        console.log(state.location, state.time);
-      }
-
-      // setState({ ...state, map: { markers } });
+      // 마커에 클릭이벤트를 등록합니다
+      // 마커 위에 인포윈도우를 표시합니다
+      kakao.maps.event.addListener(marker, 'click', () => {
+        customoverlay.setMap(map);
+      });
     }
-
-    return () => {
-      console.log('clean');
-    };
   }, []);
 
   // 마커이미지의 주소, 크기, 옵션으로 마커 이미지 생성 리턴
@@ -79,30 +92,11 @@ function KaMap({ state, setState, listHandler }) {
     const marker = new kakao.maps.Marker({
       position,
       image,
+      clickable: true,
     });
     return marker;
   }
 
-  // 맵에 마커 찍기
-  // function setMarker(markers, markerPositions) {
-  //   // eslint-disable-next-line no-plusplus
-  //   for (let i = 0; i < markerPositions.length; i++) {
-  //     const imageSize = new kakao.maps.ImageSize(22, 26);
-  //     const imageOptions = {
-  //       spriteOrigin: new kakao.maps.Point(10, 0),
-  //       spriteSize: new kakao.maps.Size(36, 98),
-  //     };
-
-  //     const markerImage = createMarkerImage(greenMarker, imageSize, imageOptions);
-  //     const marker = craeteMarker(markerPositions[i], markerImage);
-
-  //     markers.push(marker);
-  //   }
-  // }
-
-  // function setMarker(map, lat, lng)
-  // parameter => map: 카카오맵 지도 객체, lat: 위도, lng: 경도
-  // 지도 위에 해당 위도와 경도 위치에 맞게 마커 생성
   function setMarker(map, lat, lng) {
     const markerPosition = new kakao.maps.LatLng(lat, lng);
     const marker = new kakao.maps.Marker({
@@ -111,6 +105,7 @@ function KaMap({ state, setState, listHandler }) {
     marker.setMap(map);
     return marker;
   }
+
   return (
     <div
       id="map"

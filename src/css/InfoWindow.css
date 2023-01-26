@@ -1,0 +1,75 @@
+
+/* .customoverlay {
+    font-family: 'Jua', sans-serif;
+    background-color: white;
+    padding: 30px;
+    text-align: left;
+    border: 3px solid black;
+    border-radius: 15px;
+} */
+
+
+.customoverlay {
+    position: relative;
+    background-color: white;
+    bottom: 100px;
+    left: 2px;
+    font-weight: bold;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    border-bottom: 2px solid #ddd;
+    float: left;
+    padding-top: 30px;
+    padding-bottom: 10px
+}
+
+.customoverlay a {
+    display: inline;
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.customoverlay p {
+    display: block;
+    text-align: left;
+    margin-left: 15px;
+    background: #fff;
+    margin-right: 50px;
+    padding: 0px;
+    font-size: 14px;
+}
+
+/* .customoverlayContent > p:first-child {
+    padding-top: 30px;
+} */
+
+.customoverlayShare {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: skyblue;
+    padding: 5px 12px;
+    border-radius: 5px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #888;
+    width: 17px;
+    height: 17px;
+    background: url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/overlay_close.png');
+}
+
+.select {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: skyblue;
+    padding: 5px 12px;
+    border-radius: 5px;
+}
