@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import React, { useState } from 'react';
 import GlobalStyle from '../components/common/GlobalStyle';
 import Layout from '../components/common/Layout';

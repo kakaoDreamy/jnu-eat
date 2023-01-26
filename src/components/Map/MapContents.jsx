@@ -1,6 +1,7 @@
 /* eslint-disable camelcase */
 /* eslint-disable no-plusplus */
 /* eslint-disable eqeqeq */
+/* eslint-disable no-console */
 // eslint-disable-next-line no-use-before-define
 // global kakao
 import React, { useEffect } from 'react';
