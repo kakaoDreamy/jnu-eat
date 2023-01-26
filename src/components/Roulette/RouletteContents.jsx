@@ -39,7 +39,7 @@ function RouletteContents({ state, setState, nextStage }) {
         outerRadius: 180, // The size of the wheel.
         // centerX: 217, // Used to position on the background correctly.
         // centerY: 219,
-        textFontSize: 28, // Font size.
+        textFontSize: 16, // Font size.
         // Definition of all the segments.
         segments: state.rouletteList,
         // Definition of the animation
