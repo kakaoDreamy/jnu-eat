@@ -12,7 +12,7 @@ body {
     background-color: var(--gray-background);
 }
 * {
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Jua', sans-serif;
     color: var(--black-default);
     font-style: normal;
     margin: 0px;
