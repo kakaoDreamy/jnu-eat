@@ -1,3 +1,5 @@
+/* eslint-disable no-shadow */
+/* eslint-disable no-unused-vars */
 /* eslint-disable camelcase */
 /* eslint-disable no-plusplus */
 /* eslint-disable eqeqeq */
@@ -8,7 +10,6 @@ import Contents from '../common/Contents';
 import SelectBox from '../Select/SelectBox';
 import Footer from '../common/Footer';
 import palette from '../../lib/palette';
-
 import restaurant from '../../data/restaurant.json';
 // 식당 파일 임시로 생성해서 구현해봄
 // restaurant파일에 식당 좌표들 추가되면 나중에 restaurant로 교체함
@@ -17,6 +18,76 @@ import { computeDistance } from '../../lib/Map/Distance';
 const imagesrc = require('../../img/marker/markers_green.png');
 
 const { kakao } = window;
+
+const kakaoImg = require('../../img/kakao_icon.png');
+const kakaoMapImg = require('../../img/kakaomap_icon.png');
+
+const infoContents = (name, url) => {
+  const kakaoButton = () => {
+    if (window.Kakao) {
+      const kakao = window.Kakao;
+      if (!kakao.isInitialized()) {
+        kakao.init('cbad5fe6f61f1edbce0e854f9e36b16d');
+      }
+
+      kakao.Share.sendDefault({
+        objectType: 'feed',
+        content: {
+          title: '뭐 먹으러 가젠!?',
+          description: '이거 먹으러 가자~',
+          imageUrl: 'https://ifh.cc/g/oJpwDq.png',
+          link: {
+            mobileWebUrl: url,
+            webUrl: url,
+          },
+        },
+        buttons: [
+          {
+            title: '카카오맵',
+            link: {
+              mobileWebUrl: url,
+              webUrl: url,
+            },
+          },
+        ],
+      });
+    }
+  };
+
+  const wrapper = document.createElement('div');
+  wrapper.setAttribute('class', 'infoWindow');
+
+  const res_name = document.createElement('div');
+  res_name.setAttribute('class', 'resName');
+  res_name.innerHTML = `${name} <br/>`;
+
+  const shared = document.createElement('button');
+  shared.setAttribute('class', 'share_button');
+
+  const info = document.createElement('button');
+  info.setAttribute('class', 'share_button');
+
+  shared.addEventListener('click', kakaoButton);
+  info.addEventListener('click', () => window.open(url));
+
+  const sharedImage = document.createElement('img');
+  sharedImage.setAttribute('class', 'kakao_img');
+  sharedImage.setAttribute('src', kakaoImg);
+
+  const infoImage = document.createElement('img');
+  infoImage.setAttribute('class', 'kakao_img');
+  infoImage.setAttribute('src', kakaoMapImg);
+
+  shared.appendChild(sharedImage);
+  info.appendChild(infoImage);
+
+  wrapper.appendChild(res_name);
+
+  wrapper.appendChild(shared);
+  wrapper.appendChild(info);
+
+  return wrapper;
+};
 
 // 마커이미지의 주소, 크기, 옵션으로 마커 이미지 생성 리턴
 function createMarkerImage(imageSrc, size, options) {
@@ -29,6 +100,7 @@ function craeteMarker(position, image) {
   const marker = new kakao.maps.Marker({
     position,
     image,
+    clickable: true,
   });
   return marker;
 }
@@ -183,6 +255,22 @@ function MapContents({ state, setState, nextStage }) {
         list.push(food);
         console.log(state.location, state.time);
       }
+
+      const iwRemoveable = true; // removeable 속성을 ture 로 설정하면 인포윈도우를 닫을 수 있는 x버튼이 표시됩니다
+
+      // 인포윈도우를 생성합니다
+      const infowindow = new kakao.maps.InfoWindow({
+        content: infoContents(element.RES_NAME, element.RES_URL),
+        removable: iwRemoveable,
+      });
+
+      // 마커에 클릭이벤트를 등록합니다
+      kakao.maps.event.addListener(marker, 'click', function () {
+        // 마커 위에 인포윈도우를 표시합니다
+        infowindow.open(map, marker);
+      });
+
+      // const iwContent = '<div style="padding:5px;">Hello World!</div>'; // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
     });
     // end of - position 안에 있는 마커들을 화면에 띄어줌
 
