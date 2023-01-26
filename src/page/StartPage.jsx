@@ -16,11 +16,11 @@ function StartPage() {
         <img alt="mainlogo" className="logo" src={logo} />
       </div>
       <div className="reommendation">
-        <button type="button" className="recommendation_btn">
-          <Link to="/main" style={{ textDecoration: 'none', color: 'black' }}>
+        <Link to="/main" style={{ textDecoration: 'none', color: 'black' }}>
+          <button type="button" className="recommendation_btn">
             추천받기
-          </Link>
-        </button>
+          </button>
+        </Link>
       </div>
       <div className="manual">
         <ResultPage />
