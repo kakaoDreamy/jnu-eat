@@ -138,12 +138,6 @@ function RouletteContents({ state, setState, nextStage }) {
             <div className="turnText">돌려돌려 돌림판</div>
           </div>
         </div>
-
-        <div className="turnPage"></div>
-
-        {/* <div className="turnPage">
-          <div className="resultText">"{result}" 어떠신가요?</div>
-        </div> */}
       </Contents>
       <Footer>
         <RouletteBox
