@@ -18,7 +18,6 @@ const Title = styled.div`
 `;
 
 function RouletteBox({ onButton, state, resetRoulette, changeHandler }) {
-  console.log(state);
   return (
     <Container>
       <Row className="mt-3">

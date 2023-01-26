@@ -4,6 +4,7 @@
     "prettier/prettier": ["error"],
     "react/prop-types": 0,
     "global-require": 0,
+    "no-console": 0,
     "import/no-extraneous-dependencies": 0
   },
   "globals": {
