@@ -31,6 +31,14 @@
   border: none;
 }
 
+.return_btn {
+  background-color:white;
+  border: none;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
 .popup_today_go {
   text-align: center;
   margin: 20px;

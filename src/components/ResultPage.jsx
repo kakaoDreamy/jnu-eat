@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import Modal from 'react-modal';
 import '../css/Reset.css';
 import '../css/ResultPage.css';
+import { Link } from 'react-router-dom';
+import { BsArrowCounterclockwise } from 'react-icons/bs';
 import KakaoShare from './KakaoShare';
 import KakaoMap from './KakaoMap';
 
@@ -26,17 +28,15 @@ function ResultPage({ resName, resUrl }) {
       <Modal
         className="result_popup"
         isOpen={modalIsOpen}
-        onRequestClose={() => setModalIsOpen(false)}
+        onRequestClose={() => setModalIsOpen(true)} // false일 때는 modal창 닫히고 true일 때는 모달창 고정
         appElement={document.getElementById('root') || undefined}
       >
         <div className="popup_close">
-          <button
-            type="button"
-            className="popup_close_button"
-            onClick={() => setModalIsOpen(false)}
-          >
-            &#x2716;
-          </button>
+          <Link to="/" style={{ textDecoration: 'none', color: 'black' }}>
+            <button className="return_btn" type="button">
+              <BsArrowCounterclockwise size={50} />
+            </button>
+          </Link>
         </div>
         <div>
           <p className="popup_today_go">오늘 내가 갈 식당은...</p>
