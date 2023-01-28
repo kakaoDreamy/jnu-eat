@@ -56,16 +56,18 @@ const infoContents = (name, url) => {
 
   const wrapper = document.createElement('div');
   wrapper.setAttribute('class', 'infoWindow');
+  wrapper.setAttribute('style', 'width:100%; padding:10px; margin:9px');
 
   const res_name = document.createElement('div');
   res_name.setAttribute('class', 'resName');
+  res_name.setAttribute('style', 'padding-bottom:6px');
   res_name.innerHTML = `${name} <br/>`;
 
   const shared = document.createElement('button');
-  shared.setAttribute('class', 'share_button');
+  shared.setAttribute('class', 'share_btn');
 
   const info = document.createElement('button');
-  info.setAttribute('class', 'share_button');
+  info.setAttribute('class', 'shaare_btn');
 
   shared.addEventListener('click', kakaoButton);
   info.addEventListener('click', () => window.open(url));
@@ -268,6 +270,20 @@ function MapContents({ state, setState, nextStage }) {
       kakao.maps.event.addListener(marker, 'click', function () {
         // 마커 위에 인포윈도우를 표시합니다
         infowindow.open(map, marker);
+      });
+
+      const infoTitle = document.querySelectorAll('.infoWindow');
+
+      infoTitle.forEach(function (e) {
+        const w = e.offsetWidth + 10;
+        const ml = w / 2;
+        e.parentElement.style.top = '82px';
+        e.parentElement.style.left = '50%';
+        e.parentElement.style.marginLeft = `${-ml}px`;
+        e.parentElement.style.width = `${w}px`;
+        e.parentElement.previousSibling.style.display = 'none';
+        e.parentElement.parentElement.style.border = '0px';
+        e.parentElement.parentElement.style.background = 'unset';
       });
 
       // const iwContent = '<div style="padding:5px;">Hello World!</div>'; // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
