@@ -30,12 +30,12 @@ function MainPage() {
         <StatusBar>
           <ProgressBar curStage={state.curStage} />
         </StatusBar>
-        <ResultPage
-          resName={state.rouletteResult.text}
-          resUrl={state.rouletteResult.url}
-        />
+
         {state.curStage === 5 && (
-          <div>결과 페이지 : {state.rouletteResult.text}</div>
+          <ResultPage
+            resName={state.rouletteResult.text}
+            resUrl={state.rouletteResult.url}
+          />
         )}
 
         {state.curStage !== 5 && state.curStage % 2 === 1 ? (
