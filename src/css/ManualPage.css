@@ -5,8 +5,8 @@
 }
 .manual_popup {
   background-color: white;
-  width: 350px;
-  height: 700px;
+  width: 300px;
+  height: 600px;
   border-radius: 20px;
   border: 3px solid black;
   color: black;
@@ -46,7 +46,7 @@
 }
 
 .manual_content > h1 {
-  font-size: 50px;
+  font-size: 45px;
 }
 
 .manual_content > h2 {
@@ -54,5 +54,6 @@
 }
 
 .manual_content > p {
-  font-size: 25px;
+  font-size: 23px;
+  margin: 0;
 }
