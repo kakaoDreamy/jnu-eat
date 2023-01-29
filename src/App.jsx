@@ -7,7 +7,7 @@ import MainPage from './page/MainPage';
 function App() {
   return (
     <div className="App">
-      <HashRouter basename={process.env.PUBLIC_URL}>
+      <HashRouter>
         <Routes>
           <Route path="/" element={<StartPage />} />
           <Route path="/main" element={<MainPage />} />
