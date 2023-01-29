@@ -42,6 +42,7 @@
 .manual_btn {
   background-color: #40e0d0;
   border: none;
+  color: black;
 }
 
 .manual_content > h1 {

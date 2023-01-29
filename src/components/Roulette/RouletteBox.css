@@ -5,6 +5,7 @@
   font-size: 3rem;
   line-height: 69px;
   display: flex;
+  justify-content: center;
   align-items: center;
   text-align: center;
   color: #ffffff;
@@ -55,4 +56,8 @@
   --font-size-lg: clamp(1.8rem, 4vw, 6rem);
   font-size: var(--font-size-lg);
   height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 15px;
 }

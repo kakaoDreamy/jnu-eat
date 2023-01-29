@@ -5,6 +5,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import building from '../../data/building.json';
+import '../../css/SelectBox.css';
 
 const SelectBtn = styled.select`
   padding-top: 0.25rem;
@@ -24,7 +25,9 @@ function SelectBox({ state, locationHandler, timeHandler, nextStage }) {
       {state.curStage === 1 ? (
         <>
           <Row className="mb-2">
-            <Col xs="4">현재 위치</Col>
+            <Col xs="4" className="SelectBoxText">
+              현재 위치
+            </Col>
             <Col>
               <SelectBtn onChange={locationHandler}>
                 <option>현재 위치 선택</option>
@@ -47,7 +50,9 @@ function SelectBox({ state, locationHandler, timeHandler, nextStage }) {
             </Col>
           </Row>
           <Row className="mb-2">
-            <Col xs="4">소요 시간</Col>
+            <Col xs="4" className="SelectBoxText">
+              소요 시간
+            </Col>
             <Col>
               <SelectBtn onChange={timeHandler} value={state.time}>
                 <option>소요 시간 선택</option>
@@ -68,8 +73,8 @@ function SelectBox({ state, locationHandler, timeHandler, nextStage }) {
           </div>
         </>
       ) : (
-        <div className="d-grid gap-1 mt-3">
-          <Button variant="primary" onClick={nextStage}>
+        <div className="d-grid gap-1 mt-2 w-10">
+          <Button variant="primary" className="btn-lg" onClick={nextStage}>
             식당 고르기
           </Button>
         </div>
