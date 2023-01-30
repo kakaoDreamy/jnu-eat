@@ -8,7 +8,7 @@ const FooterBlock = styled.footer`
   text-align: center;
   /* width: 250px; */
   height: 20vh;
-
+  border-top: 2px solid black;
   /* left: 50%; */
   /* margin-left: -125px; */
   left: 0px;
