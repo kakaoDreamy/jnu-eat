@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/jnu-eat/static/css/main.fa087ac4.css",
-    "main.js": "/jnu-eat/static/js/main.d1359ba1.js",
+    "main.css": "/jnu-eat/static/css/main.91e50080.css",
+    "main.js": "/jnu-eat/static/js/main.3357a402.js",
     "static/media/title.png": "/jnu-eat/static/media/title.e3bcee52386b231de09a.png",
     "static/media/kakao_icon.png": "/jnu-eat/static/media/kakao_icon.c55b5d6b3f39dd5a859f.png",
     "index.html": "/jnu-eat/index.html",
-    "main.fa087ac4.css.map": "/jnu-eat/static/css/main.fa087ac4.css.map",
-    "main.d1359ba1.js.map": "/jnu-eat/static/js/main.d1359ba1.js.map"
+    "main.91e50080.css.map": "/jnu-eat/static/css/main.91e50080.css.map",
+    "main.3357a402.js.map": "/jnu-eat/static/js/main.3357a402.js.map"
   },
   "entrypoints": [
-    "static/css/main.fa087ac4.css",
-    "static/js/main.d1359ba1.js"
+    "static/css/main.91e50080.css",
+    "static/js/main.3357a402.js"
   ]
 }

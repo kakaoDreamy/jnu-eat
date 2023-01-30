@@ -92,12 +92,12 @@ function RouletteContents({ state, setState, nextStage }) {
   }
 
   function resultOn() {
-    setStyle({ display: 'block' });
+    setStyle({ visibility: 'visible' });
   }
 
   const changeHandler = () => {
     setOnButton(false);
-    setStyle({ display: 'none' });
+    setStyle({ visibility: 'hidden' });
     setResult('');
 
     if (state.rouletteList.length === 2) {
