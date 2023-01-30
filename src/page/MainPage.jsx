@@ -21,7 +21,7 @@ function MainPage() {
   const nextStage = () => {
     setState({ ...state, curStage: state.curStage + 1 });
   };
-  console.log(state);
+  // console.log(state);
   return (
     <div className="App">
       <GlobalStyle />
