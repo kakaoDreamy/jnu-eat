@@ -86,3 +86,8 @@
   align-items: center;
   justify-content: space-around;
 }
+
+.ReactModalPortal {
+  position: relative;
+  z-index: 10;
+}
