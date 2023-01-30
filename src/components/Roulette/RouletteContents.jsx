@@ -31,7 +31,7 @@ function RouletteContents({ state, setState, nextStage }) {
   const [result, setResult] = useState('');
   const [theWheel, setTheWheel] = useState('');
   const [onButton, setOnButton] = useState(false);
-  const [style, setStyle] = useState({ visibility: 'hidden' });
+  const [style, setStyle] = useState({ display: 'none' });
 
   useEffect(() => {
     if (state.rouletteList.length === 1) {
@@ -91,9 +91,9 @@ function RouletteContents({ state, setState, nextStage }) {
     }
   }
 
-  // function resultOn() {
-  //   document.getElementsByClassName('resultText').style.visibility = 'visible';
-  // }
+  function resultOn() {
+    setStyle({ display: 'block' });
+  }
 
   const changeHandler = () => {
     setOnButton(false);
@@ -151,16 +151,10 @@ function RouletteContents({ state, setState, nextStage }) {
           </div>
           <div
             className="turnButton"
-            onClick={startSpin}
-            // onClick={() => {
-            //   startSpin();
-            //   resultOn();
-            // }}
-            onMouseEnter={e => {
-              setStyle({ display: 'block' });
-            }}
-            onMouseLeave={e => {
-              setStyle({ display: 'none' });
+            // onClick={startSpin}
+            onClick={() => {
+              startSpin();
+              resultOn();
             }}
           >
             <div className="arrow">▲</div>
