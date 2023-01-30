@@ -1,7 +1,7 @@
 import React from 'react';
 import '../css/StartPage.css';
 import { Link } from 'react-router-dom';
-import ResultPage from './ManualPopup';
+import ManualPage from './ManualPopup';
 
 function StartPage() {
   const logo = require('../img/title.png');
@@ -23,7 +23,7 @@ function StartPage() {
         </Link>
       </div>
       <div className="manual">
-        <ResultPage />
+        <ManualPage />
       </div>
     </div>
   );
