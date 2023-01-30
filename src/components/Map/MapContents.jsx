@@ -135,7 +135,7 @@ function MapContents({ state, setState, nextStage }) {
 
       return result;
     });
-    console.log(dupArr);
+    // console.log(dupArr);
 
     const set = new Set(dupArr);
 
@@ -204,7 +204,7 @@ function MapContents({ state, setState, nextStage }) {
     // end of 식당 건물 전체 불러와서 각각의 좌표, RES_GB값을 position 배열에다 저장
 
     if (!state.time && !state.rouletteResult) {
-      console.log('first');
+      // console.log('first');
     } else if (state.time && !state.rouletteResult) {
       // 조건에 맞는 마커들만 저장
       positions = positions.filter(element => {
@@ -218,7 +218,7 @@ function MapContents({ state, setState, nextStage }) {
         return dist <= Number(state.time);
         // true 인 값만 반환
       });
-      console.log(positions);
+      // console.log(positions);
     } else {
       // 3단계
       positions = positions.filter(element => {
@@ -235,7 +235,7 @@ function MapContents({ state, setState, nextStage }) {
         );
         // true 인 값만 반환
       });
-      console.log('3단계', positions);
+      // console.log('3단계', positions);
     }
 
     // position 안에 있는 마커들을 화면에 띄어줌
@@ -255,7 +255,7 @@ function MapContents({ state, setState, nextStage }) {
         food.RES_URL = element.RES_URL;
 
         list.push(food);
-        console.log(state.location, state.time);
+        // console.log(state.location, state.time);
       }
 
       const iwRemoveable = true; // removeable 속성을 ture 로 설정하면 인포윈도우를 닫을 수 있는 x버튼이 표시됩니다
@@ -295,7 +295,7 @@ function MapContents({ state, setState, nextStage }) {
     // end of - list를 상태에다가 갱신
 
     return () => {
-      console.log('unmount-MapContents.jsx');
+      // console.log('unmount-MapContents.jsx');
     };
   }, [state.location, state.time]);
 

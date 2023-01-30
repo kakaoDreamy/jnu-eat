@@ -7,7 +7,7 @@ export default function KakaoMap({ resUrl }) {
 
   const kakaoMapImg = require('../img/kakaomap_icon.png');
 
-  console.log('최종 url', resUrl);
+  // console.log('최종 url', resUrl);
   return (
     <button
       className="share_button"

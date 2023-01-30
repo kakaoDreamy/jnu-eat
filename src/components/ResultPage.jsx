@@ -12,7 +12,7 @@ function ResultPage({ resName, resUrl }) {
   // const kakaoImg = require('../img/kakao_icon.png');
   // const kakaoMapImg = require('../img/kakaomap_icon.png');
 
-  console.log('식당 url - ', resUrl);
+  // console.log('식당 url - ', resUrl);
   // 식당 url을 resUrl로 받아옴. -- 식당 url 필요하면 이거 사용하세요.
   return (
     <Modal
