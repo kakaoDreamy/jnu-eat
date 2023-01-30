@@ -64,9 +64,15 @@ function SelectBox({ state, locationHandler, timeHandler, nextStage }) {
           </Row>
           <div className="d-grid gap-1">
             <Button
-              variant={state.location && state.time ? 'primary' : 'secondary'}
+              variant={
+                state.location && state.time && state.rouletteList.length
+                  ? 'primary'
+                  : 'secondary'
+              }
               onClick={nextStage}
-              disabled={!state.location || !state.time}
+              disabled={
+                !state.location || !state.time || !state.rouletteList.length
+              }
             >
               룰렛
             </Button>

@@ -33,6 +33,17 @@ function RouletteContents({ state, setState, nextStage }) {
   const [onButton, setOnButton] = useState(false);
 
   useEffect(() => {
+    if (state.rouletteList.length === 1) {
+      setState({
+        ...state,
+        curStage: state.curStage + 1,
+        rouletteList: [],
+        rouletteResult: state.rouletteList[0],
+      });
+    }
+  }, []);
+
+  useEffect(() => {
     setTheWheel(
       new Winwheel({
         numSegments: state.rouletteList.length, // Number of segments
@@ -86,35 +97,31 @@ function RouletteContents({ state, setState, nextStage }) {
 
   const changeHandler = () => {
     setOnButton(false);
-    setState({
-      ...state,
-      rouletteList: state.rouletteList.filter(
-        element => element.text !== state.rouletteResult.text,
-      ),
-    });
-  };
 
-  const resetRoulette = () => {
     if (state.rouletteList.length === 2) {
       setState({
         ...state,
         rouletteList: [],
-        rouletteResult: state.rouletteList.map(element => {
-          if (element === state.rouletteResult) {
-          } else {
-            return element;
-          }
-        }),
+        rouletteResult: state.rouletteList.filter(
+          element => element.text !== state.rouletteResult.text,
+        )[0],
       });
-
-      nextStage();
     } else {
       setState({
         ...state,
-        rouletteList: [],
+        rouletteList: state.rouletteList.filter(
+          element => element.text !== state.rouletteResult.text,
+        ),
       });
-      nextStage();
     }
+  };
+
+  const resetRoulette = () => {
+    setState({
+      ...state,
+      rouletteList: [],
+    });
+    nextStage();
   };
 
   function alertPrize(indicatedSegment) {
