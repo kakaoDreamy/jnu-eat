@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
@@ -35,11 +36,7 @@ function RouletteBox({ onButton, state, resetRoulette, changeHandler }) {
                 variant="danger"
                 size="lg"
                 className="w-75 p-3"
-                onClick={
-                  state.rouletteList.length === 2
-                    ? resetRoulette
-                    : changeHandler
-                }
+                onClick={changeHandler}
               >
                 별로에요
               </Button>

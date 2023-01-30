@@ -18,6 +18,7 @@ function MainPage() {
     map: '',
   });
 
+  console.log(state);
   const nextStage = () => {
     setState({ ...state, curStage: state.curStage + 1 });
   };
