@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.91e50080.css",
-    "main.js": "/static/js/main.54295b72.js",
-    "static/media/title.png": "/static/media/title.e3bcee52386b231de09a.png",
-    "static/media/kakao_icon.png": "/static/media/kakao_icon.c55b5d6b3f39dd5a859f.png",
-    "index.html": "/index.html",
-    "main.91e50080.css.map": "/static/css/main.91e50080.css.map",
-    "main.54295b72.js.map": "/static/js/main.54295b72.js.map"
+    "main.css": "/jnu-eat/static/css/main.91e50080.css",
+    "main.js": "/jnu-eat/static/js/main.4176cfe2.js",
+    "static/media/title.png": "/jnu-eat/static/media/title.e3bcee52386b231de09a.png",
+    "static/media/kakao_icon.png": "/jnu-eat/static/media/kakao_icon.c55b5d6b3f39dd5a859f.png",
+    "index.html": "/jnu-eat/index.html",
+    "main.91e50080.css.map": "/jnu-eat/static/css/main.91e50080.css.map",
+    "main.4176cfe2.js.map": "/jnu-eat/static/js/main.4176cfe2.js.map"
   },
   "entrypoints": [
     "static/css/main.91e50080.css",
-    "static/js/main.54295b72.js"
+    "static/js/main.4176cfe2.js"
   ]
 }
