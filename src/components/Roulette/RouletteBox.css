@@ -21,7 +21,7 @@
 
 #canvas {
   /* width: 80%; */
-  width: clamp(35vw, 30rem, 100vw);
+  width: clamp(20vw, 30rem, 100vw);
   position: absolute;
   top: 50%;
   left: 50%;
