@@ -97,6 +97,8 @@ function RouletteContents({ state, setState, nextStage }) {
 
   const changeHandler = () => {
     setOnButton(false);
+    setStyle({ display: 'none' });
+    setResult('');
 
     if (state.rouletteList.length === 2) {
       setState({
