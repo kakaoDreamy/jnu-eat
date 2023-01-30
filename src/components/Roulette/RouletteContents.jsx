@@ -31,6 +31,7 @@ function RouletteContents({ state, setState, nextStage }) {
   const [result, setResult] = useState('');
   const [theWheel, setTheWheel] = useState('');
   const [onButton, setOnButton] = useState(false);
+  const [style, setStyle] = useState({ display: 'none' });
 
   useEffect(() => {
     if (state.rouletteList.length === 1) {
@@ -90,6 +91,10 @@ function RouletteContents({ state, setState, nextStage }) {
     }
   }
 
+  function resultOn() {
+    setStyle({ display: 'block' });
+  }
+
   const changeHandler = () => {
     setOnButton(false);
 
@@ -142,8 +147,17 @@ function RouletteContents({ state, setState, nextStage }) {
         <div className="turnPage">
           <canvas id="canvas" width="400" height="450"></canvas>
 
-          <div className="resultText">"{result}" 어떠신가요?</div>
-          <div className="turnButton" onClick={startSpin}>
+          <div className="resultText" style={style}>
+            "{result}" 어떠신가요?
+          </div>
+          <div
+            className="turnButton"
+            // onClick={startSpin}
+            onClick={() => {
+              startSpin();
+              resultOn();
+            }}
+          >
             <div className="arrow">▲</div>
             <div className="turnText">돌려돌려 돌림판</div>
           </div>
