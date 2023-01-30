@@ -3,6 +3,9 @@ module.exports = {
   output: {
     filename: 'compiled.js',
   },
+  node: {
+    server: 'empty',
+  },
   resolve: {
     extensions: ['js', 'jsx', '.json'],
   },
