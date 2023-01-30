@@ -140,7 +140,7 @@ function RouletteContents({ state, setState, nextStage }) {
         url: indicatedSegment.url,
       },
     });
-    setResult(indicatedSegment.text);
+    setResult("\"" + indicatedSegment.text+ "\"" + ' 어떠신가요?');
   }
 
   return (
@@ -150,7 +150,7 @@ function RouletteContents({ state, setState, nextStage }) {
           <canvas id="canvas" width="400" height="450"></canvas>
 
           <div className="resultText" style={style}>
-            "{result}" 어떠신가요?
+            {result}
           </div>
           <div
             className="turnButton"

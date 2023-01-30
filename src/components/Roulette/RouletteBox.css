@@ -53,12 +53,12 @@
 }
 
 .resultText {
-  --font-size-lg: clamp(1.8rem, 4vw, 4rem);
+  --font-size-lg: clamp(1.8rem, 4vw, 3rem);
   font-size: var(--font-size-lg);
   height: 100px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
   margin-bottom: 15px;
-  /* visibility: hidden; */
+
 }
