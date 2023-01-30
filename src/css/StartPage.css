@@ -73,6 +73,7 @@ div {
 }
 
 .recommendation_btn {
+  background-color: white;
   border-radius: 15px;
   border-style: solid;
   border-color: #282c34;

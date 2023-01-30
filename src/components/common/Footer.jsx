@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const FooterBlock = styled.footer`
   text-align: center;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 18px;
   text-align: center;
   /* width: 250px; */
   height: 20vh;

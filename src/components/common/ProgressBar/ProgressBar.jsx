@@ -56,7 +56,7 @@ const StepCounter = styled.div`
   align-items: center;
   width: 24px;
   height: 24px;
-  font-size: 16px;
+  font-size: 18px;
   border-radius: 50%;
   background: white;
   margin-bottom: 6px;
@@ -87,6 +87,7 @@ const StepName = styled.div`
         return 'black';
     }
   }};
+  font-size: 18px;
 `;
 
 const STAGE_NAME = [
