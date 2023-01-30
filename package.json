@@ -26,10 +26,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build && webpack --mode production",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "build": "webpack --mode production",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
