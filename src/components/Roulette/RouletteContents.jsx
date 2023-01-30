@@ -77,6 +77,11 @@ function RouletteContents({ state, setState, nextStage }) {
       // the current animation. The user will have to reset before spinning again.
       wheelSpinning = true;
     }
+    // document.getElementsByClassName('resultText').style.visibility = 'visible';
+  }
+
+  function resultOn() {
+    document.getElementsByClassName('resultText').style.visibility = 'visible';
   }
 
   const changeHandler = () => {
@@ -135,7 +140,13 @@ function RouletteContents({ state, setState, nextStage }) {
           <canvas id="canvas" width="400" height="450"></canvas>
 
           <div className="resultText">"{result}" 어떠신가요?</div>
-          <div className="turnButton" onClick={startSpin}>
+          <div
+            className="turnButton"
+            onClick={() => {
+              startSpin();
+              resultOn();
+            }}
+          >
             <div className="arrow">▲</div>
             <div className="turnText">돌려돌려 돌림판</div>
           </div>
