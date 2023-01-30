@@ -31,6 +31,7 @@ function RouletteContents({ state, setState, nextStage }) {
   const [result, setResult] = useState('');
   const [theWheel, setTheWheel] = useState('');
   const [onButton, setOnButton] = useState(false);
+  const [style, setStyle] = useState({ visibility: 'hidden' });
 
   useEffect(() => {
     if (state.rouletteList.length === 1) {
@@ -88,12 +89,11 @@ function RouletteContents({ state, setState, nextStage }) {
       // the current animation. The user will have to reset before spinning again.
       wheelSpinning = true;
     }
-    // document.getElementsByClassName('resultText').style.visibility = 'visible';
   }
 
-  function resultOn() {
-    document.getElementsByClassName('resultText').style.visibility = 'visible';
-  }
+  // function resultOn() {
+  //   document.getElementsByClassName('resultText').style.visibility = 'visible';
+  // }
 
   const changeHandler = () => {
     setOnButton(false);
@@ -146,12 +146,21 @@ function RouletteContents({ state, setState, nextStage }) {
         <div className="turnPage">
           <canvas id="canvas" width="400" height="450"></canvas>
 
-          <div className="resultText">"{result}" 어떠신가요?</div>
+          <div className="resultText" style={style}>
+            "{result}" 어떠신가요?
+          </div>
           <div
             className="turnButton"
-            onClick={() => {
-              startSpin();
-              resultOn();
+            onClick={startSpin}
+            // onClick={() => {
+            //   startSpin();
+            //   resultOn();
+            // }}
+            onMouseEnter={e => {
+              setStyle({ display: 'block' });
+            }}
+            onMouseLeave={e => {
+              setStyle({ display: 'none' });
             }}
           >
             <div className="arrow">▲</div>
