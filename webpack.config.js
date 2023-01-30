@@ -4,7 +4,7 @@ module.exports = {
     filename: 'compiled.js',
   },
   resolve: {
-    extensions: ['js', 'jsx'],
+    extensions: ['js', 'jsx', '.json'],
   },
   module: {
     rules: [
