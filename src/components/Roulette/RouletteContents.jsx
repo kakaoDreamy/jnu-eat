@@ -96,6 +96,7 @@ function RouletteContents({ state, setState, nextStage }) {
     if (state.rouletteList.length === 2) {
       setState({
         ...state,
+        curStage: state.curStage + 1,
         rouletteList: [],
         rouletteResult: state.rouletteList.filter(
           element => element.text !== state.rouletteResult.text,
