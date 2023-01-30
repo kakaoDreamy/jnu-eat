@@ -53,7 +53,7 @@
 }
 
 .resultText {
-  --font-size-lg: clamp(1.8rem, 4vw, 6rem);
+  --font-size-lg: clamp(1.8rem, 4vw, 4rem);
   font-size: var(--font-size-lg);
   height: 100px;
   display: flex;
