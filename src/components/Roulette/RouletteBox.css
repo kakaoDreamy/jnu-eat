@@ -21,7 +21,7 @@
 
 #canvas {
   /* width: 80%; */
-  width: clamp(20vw, 30rem, 100vw);
+  width: clamp(18vw, 30rem, 100vw);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -60,5 +60,4 @@
   justify-content: center;
   align-items: flex-end;
   margin-bottom: 15px;
-
 }

@@ -32,7 +32,7 @@ function RouletteContents({ state, setState, nextStage }) {
   const [theWheel, setTheWheel] = useState('');
   const [onButton, setOnButton] = useState(false);
   const [style, setStyle] = useState({ display: 'none' });
-
+  const [rouletteBtn, isRouletteBtn] = useState(true);
   useEffect(() => {
     if (state.rouletteList.length === 1) {
       setState({
@@ -45,6 +45,7 @@ function RouletteContents({ state, setState, nextStage }) {
   }, []);
 
   useEffect(() => {
+    isRouletteBtn(true);
     setTheWheel(
       new Winwheel({
         numSegments: state.rouletteList.length, // Number of segments
@@ -89,6 +90,7 @@ function RouletteContents({ state, setState, nextStage }) {
       // the current animation. The user will have to reset before spinning again.
       wheelSpinning = true;
     }
+    isRouletteBtn(false);
   }
 
   function resultOn() {
@@ -140,9 +142,9 @@ function RouletteContents({ state, setState, nextStage }) {
         url: indicatedSegment.url,
       },
     });
-    setResult("\"" + indicatedSegment.text+ "\"" + ' 어떠신가요?');
+    setResult('"' + indicatedSegment.text + '"' + ' 어떠신가요?');
   }
-
+  console.log(rouletteBtn);
   return (
     <>
       <Contents result={result}>
@@ -152,17 +154,18 @@ function RouletteContents({ state, setState, nextStage }) {
           <div className="resultText" style={style}>
             {result}
           </div>
-          <div
+          <button
             className="turnButton"
             // onClick={startSpin}
             onClick={() => {
               startSpin();
               resultOn();
             }}
+            disabled={!rouletteBtn}
           >
             <div className="arrow">▲</div>
             <div className="turnText">돌려돌려 돌림판</div>
-          </div>
+          </button>
         </div>
       </Contents>
       <Footer>
