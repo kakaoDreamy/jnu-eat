@@ -100,7 +100,7 @@
   },
   {
     "RES_ID": 12,
-    "RES_NAME": "매콩스카이",
+    "RES_NAME": "메콩스카이",
     "RES_ADDR": "제주 제주시 제주대학로 77",
     "RES_LAT": 33.459358,
     "RES_LNG": 126.558509,
@@ -430,5 +430,32 @@
     "RES_LNG": 126.559481,
     "RES_GB": "백반-죽-국수",
     "RES_URL": "https://place.map.kakao.com/25402919"
+  },
+  {
+    "RES_ID": 49,
+    "RES_NAME": "짬스뽕스",
+    "RES_ADDR": "제주특별자치도 제주시 산천단동3길 31 2층",
+    "RES_LAT": 33.450539,
+    "RES_LNG": 126.558333,
+    "RES_GB": "중식",
+    "RES_URL": "https://place.map.kakao.com/2060597088"
+  },
+  {
+    "RES_ID": 50,
+    "RES_NAME": "용의주도 라멘집",
+    "RES_ADDR": "제주특별자치도 제주시 산천단동3길 13-4",
+    "RES_LAT": 33.448983,
+    "RES_LNG": 126.558573,
+    "RES_GB": "돈까스-회-일식",
+    "RES_URL": "https://place.map.kakao.com/1557097642"
+  },
+  {
+    "RES_ID": 51,
+    "RES_NAME": "제대로떡볶이",
+    "RES_ADDR": "제주특별자치도 제주시 산천단동3길 6-1",
+    "RES_LAT": 33.448602,
+    "RES_LNG": 126.559623,
+    "RES_GB": "분식",
+    "RES_URL": "https://place.map.kakao.com/733655520"
   }
 ]
