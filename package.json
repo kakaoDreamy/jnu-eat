@@ -31,7 +31,6 @@
     "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
-  "homepage": "https://kakaodreamy.github.io/jnu-eat/",
   "eslintConfig": {
     "extends": [
       "react-app",
