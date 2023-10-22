@@ -31,7 +31,7 @@ export default function KakaoShare({ resName }) {
         objectType: 'feed',
         content: {
           title: '뭐 먹으러 가젠!?',
-          description: '이거 먹으러 가자~',
+          description: '이거 먹으러 가게~',
           imageUrl: 'https://ifh.cc/g/Yp8lCK.jpg',
           link: {
             mobileWebUrl: resUrl,
