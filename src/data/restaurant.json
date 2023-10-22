@@ -370,15 +370,6 @@
   },
   {
     "RES_ID": 42,
-    "RES_NAME": "챨리스 스테이크",
-    "RES_ADDR": "제주특별자치도 제주시 산천단동2길 14 1층",
-    "RES_LAT": 33.449148,
-    "RES_LNG": 126.558566,
-    "RES_GB": "양식",
-    "RES_URL": "https://place.map.kakao.com/1448133411"
-  },
-  {
-    "RES_ID": 43,
     "RES_NAME": "콘킹부대찌개",
     "RES_ADDR": "제주특별자치도 제주시 제주대학로7길 5-2 1층",
     "RES_LAT": 33.460638,
@@ -387,7 +378,7 @@
     "RES_URL": "https://place.map.kakao.com/21525668"
   },
   {
-    "RES_ID": 44,
+    "RES_ID": 43,
     "RES_NAME": "텐동아우라",
     "RES_ADDR": "제주특별자치도 제주시 제주대학로7길 9 1층",
     "RES_LAT": 33.460769,
@@ -396,7 +387,7 @@
     "RES_URL": "https://place.map.kakao.com/253333044"
   },
   {
-    "RES_ID": 45,
+    "RES_ID": 44,
     "RES_NAME": "푸라닭치킨 제주대점",
     "RES_ADDR": "제주특별자치도 제주시 산천단동3길 13-1 1층",
     "RES_LAT": 33.448926,
@@ -405,7 +396,7 @@
     "RES_URL": "https://place.map.kakao.com/1502959810"
   },
   {
-    "RES_ID": 46,
+    "RES_ID": 45,
     "RES_NAME": "학교종이 땡땡땡",
     "RES_ADDR": "제주특별자치도 제주시 제주대학로 113 지하1층",
     "RES_LAT": 33.460367,
@@ -414,7 +405,7 @@
     "RES_URL": "https://place.map.kakao.com/758756399"
   },
   {
-    "RES_ID": 47,
+    "RES_ID": 46,
     "RES_NAME": "한솥도시락",
     "RES_ADDR": "제주특별자치도 제주시 제주대학로 107 2층",
     "RES_LAT": 33.46034,
@@ -423,7 +414,7 @@
     "RES_URL": "https://place.map.kakao.com/1608196405"
   },
   {
-    "RES_ID": 48,
+    "RES_ID": 47,
     "RES_NAME": "흥부",
     "RES_ADDR": "제주특별자치도 제주시 산천단동3길 12",
     "RES_LAT": 33.448977,
@@ -432,7 +423,7 @@
     "RES_URL": "https://place.map.kakao.com/25402919"
   },
   {
-    "RES_ID": 49,
+    "RES_ID": 48,
     "RES_NAME": "짬스뽕스",
     "RES_ADDR": "제주특별자치도 제주시 산천단동3길 31 2층",
     "RES_LAT": 33.450539,
@@ -441,7 +432,7 @@
     "RES_URL": "https://place.map.kakao.com/2060597088"
   },
   {
-    "RES_ID": 50,
+    "RES_ID": 49,
     "RES_NAME": "용의주도 라멘집",
     "RES_ADDR": "제주특별자치도 제주시 산천단동3길 13-4",
     "RES_LAT": 33.448983,
@@ -450,7 +441,7 @@
     "RES_URL": "https://place.map.kakao.com/1557097642"
   },
   {
-    "RES_ID": 51,
+    "RES_ID": 50,
     "RES_NAME": "제대로떡볶이",
     "RES_ADDR": "제주특별자치도 제주시 산천단동3길 6-1",
     "RES_LAT": 33.448602,
